@@ -1,0 +1,546 @@
+/****************************************************/
+/*													*/
+/*	description:									*/
+/*		type: stylesheet							*/ 
+/*		url: http://www.jlgm.org stylesheet 		*/ 	
+/* 	author: José Luis García Martínez         		*/
+/*	License: Attribution-NonCommercial-ShareAlike  	*/
+/*		Unported (CC BY-NC-SA 3.0)                	*/
+/*													*/
+/****************************************************/
+
+
+/***********************************************************************************************************************/
+/*                                                       RESET STYLES                                                  */
+/***********************************************************************************************************************/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/***********************************************************************************************************************/
+/*                                                       GENERAL                                                       */
+/***********************************************************************************************************************/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Georgia, Palatino, Times, 'Times New Roman', sans-serif;
+}
+
+html{
+	padding:0.8em;
+}
+
+body {
+	background:#ffffff url('../images/bg.png') repeat;
+	max-width: 60em; /* 16x60 = 960px */
+	margin: auto;
+	padding: 0 0.5em 3em 0.5em;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link,
+a:visited {
+	color: #f30;
+}
+
+a:hover {
+	color: orange;
+}
+
+strong {
+	color: orange;	
+}
+
+h1 {
+	font-size: 2.5em; 
+	font-weight: normal;
+	margin: 0.2em auto;
+}
+
+h2 {
+	font-size: 1.5em;
+	font-weight: normal;
+	margin: 1em auto;
+}
+
+h3 {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-top: 1.5em;
+}
+
+p {
+	line-height: 1.5em; 
+	padding: 0 20px 5px;
+}
+
+ul {
+	font-size: 1.1em; 
+	margin-left: 0.8em;
+}
+
+ul li {
+	margin: 0.4em 0; 
+}
+
+
+/*************************/
+/*       HEADER          */
+/*************************/
+
+header {
+	margin-top: 2em;
+}
+
+
+/*************************/
+/*         NAV           */
+/*************************/
+nav {
+	display: block;
+	overflow: hidden;
+	border-bottom: 1px solid black;
+	margin-bottom: 2.25em;
+}
+
+nav li {
+	float: right;
+	padding: 0em 1em 0em 0em;
+	list-style: none;
+}
+
+
+/*************************/
+/*       CONTENT         */
+/*************************/
+
+.about h2 {
+	text-decoration:underline;
+}
+
+section {
+	font-size: 1.1em; 
+	margin: 30px 0; 
+	overflow: hidden; 
+}
+
+section h1 {
+	border-left: 2px solid orange; 
+	font-size: 1.4em; 
+	margin-bottom: 10px; 
+	padding-left: 5px; 
+	text-transform: uppercase;
+}
+
+
+section ul li {
+	font-size: 0.8em;
+	list-style: circle inside none; 
+	cursor: default
+}
+
+section ul li:hover {
+	list-style: disc inside none;
+}
+
+
+/*************************/
+/*       FOOTER          */
+/*************************/
+footer {
+	margin-top: 3em;
+	overflow: hidden;
+	border-top: 1px solid black;	
+}
+
+footer ul{
+	margin-top: 0.5em;
+	text-align: center;
+}
+
+footer li {	
+	display: inline;
+	padding: 0 1em 0 1em;
+}
+
+footer img {
+	height: 30px;
+	width:	30px;
+	vertical-align:middle;
+	padding-bottom: 0.25em;
+}
+
+/******************************/
+/*      MEDIA QUERIES         */
+/******************************/
+@media only screen and (max-width: 980px){
+	footer li:nth-child(4) {
+		display: block;	
+	}
+}
+
+@media only screen and (max-width: 780px){
+	footer li:nth-child(odd) {
+		float: left;
+		clear: left;	
+		margin-left: 0.5em;
+	}
+	footer li:nth-child(even) {
+		float: right;
+		clear: right;	
+		margin-right: 0.5em;
+	}
+}
+
+@media only screen and (max-width: 540px){
+	html{
+		padding: 0.4em;
+	}
+
+	header {
+		text-align: center;
+		margin-top: 0.5em;
+	}
+
+	header h1 {
+		font-size: 1.5em;
+	}
+
+	nav {
+		text-align: center;
+		overflow: hidden;
+	}
+
+	nav li {
+		display: inline;
+		float: none;
+	}
+
+	footer li:nth-child(odd) {
+		float: none;			
+		margin: 0;
+	}
+	footer li:nth-child(even) {
+		float: none;
+		margin: 0;	
+	}
+	
+	footer li {
+		float: none;
+		display: block;	
+	}
+}
+
+
+
+
+/***********************************************************************************************************************/
+/*                                                       CURRICULUM                                                    */
+/***********************************************************************************************************************/
+
+#skills dl {margin-left: 15px;}
+#skills dl dt {clear: left; display: inline; float: left; margin: 10px 5px 10px 0; padding: 2px; text-align: right; width: 150px;}
+#skills dl dd {background: #dfdfdf; display: inline; float: left; font-size: 1em; margin: 10px 4px; padding: 4px; -webkit-border-radius: 5px; border-radius: 5px; -webkit-box-shadow:  0px 1px 1px 0px rgba(0, 0, 0, 0.35);  box-shadow:  0px 1px 1px 0px rgba(0, 0, 0, 0.35); cursor: default}
+#skills dl dd:hover {background-color: #ccc; -webkit-box-shadow: inset 0px 2px 1px 1px rgba(0, 0, 0, 0.15); box-shadow: inset 0px 2px 1px 1px rgba(0, 0, 0, 0.15); }
+
+#experience article, #studies article {margin: 15px 0 37px 130px; padding-left: 5px; position: relative; border: 1px solid #FCE7BA}
+#experience article:last-child, #studies article:last-child {margin-bottom: 0}
+#experience article:hover, #studies article:hover {border: 1px solid #FF9000; background: transparent}
+#experience article h1, #studies article h1, #languages article h1 {border: none; font-size: 1.1em; font-style: italic; font-weight: bold; padding: 0; text-transform: none;}
+#experience article h1 span, #studies article h1 span {color: #777; font-size: 0.95em; font-weight: normal;}
+#experience article h2, #studies article h2 {background: transparent; display: inline; font-size: 1em; font-weight: normal; padding: 1.5em; color: orange;}
+#experience article .start, #experience article .end, #studies article .start, #studies article .end  {background: transparent; border-top: 1px solid orange; font-size: 1em; left: -130px; padding: 4px 0; position: absolute; text-align: center; top: 25px; width: 115px;}
+#experience article .end, #studies article .end {top: 0; border: none}
+#experience article p, #studies article p {font-size: 1.1em; line-height: 22px; margin: 10px 0 0; padding-left: 0;}
+#studies article .end {border-bottom: 1px solid orange;}
+#languages article {padding-left:20px;}
+
+
+#cv-pdf img {
+	float: right;
+	display: inline;
+	width: 15%;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width:768px) {
+  .contact li {font-size: 0.7em;}
+}
+
+@media screen and (max-width:680px) {
+  #skills dl dt {display: block; float: none; margin: 0; padding-top: 1.5em; text-align: left;}
+}
+
+@media screen and (max-width:500px) {
+  .contact li {border-right: medium none; display: block; float: none; font-size: 1em; overflow: hidden; padding: 6px 10px; text-align: left; width: auto;}
+}
+
+@media screen and (max-width:480px) {
+  #experience article {margin: 40px 0 37px;}
+  #experience article .start, #experience article .end {padding: 0px; left: 0; top: -25px; border: none; border-right: 1px solid orange;}
+  #experience article .end {left: 125px; top: -25px; border: none}
+  
+  #studies article {margin: 40px 0 37px;}
+  #studies article .start, #experience article .end {padding: 0px; left: 0; top: -25px; border: none; border-right: 1px solid orange;}
+  #experience article .end {left: 125px; top: -25px; border: none}
+}
+
+
+/***********************************************************************************************************************/
+/*                                                       CONTACT                                                       */
+/***********************************************************************************************************************/
+
+.vcard {
+	display:none;
+}
+
+/*------------------------------------*\
+	MAIN
+\*------------------------------------*/
+
+#card{
+	position:relative;
+	margin:4em auto;
+	padding:20px 20px 0 20px;
+	border:10px solid #f0f0f0;
+	background:#fff;
+	width:25em;
+
+	-moz-box-shadow:0 0 10px rgba(0,0,0,0.25);
+	-webkit-box-shadow:0 0 10px rgba(0,0,0,0.25);
+	-o-box-shadow:0 0 10px rgba(0,0,0,0.25);
+	box-shadow:0 0 10px rgba(0,0,0,0.25);
+}
+#card:before,
+#card:after{
+	content:" ";
+	display:block;
+	border:10px solid #f0f0f0;
+	background:#fff;
+	z-index:-1;
+	position:absolute;
+	top:-10px;
+	right:-10px;
+	bottom:-10px;
+	left:-10px;
+	
+	-moz-box-shadow:0 0 10px rgba(0,0,0,0.25);
+	-webkit-box-shadow:0 0 10px rgba(0,0,0,0.25);
+	-o-box-shadow:0 0 10px rgba(0,0,0,0.25);
+	box-shadow:0 0 10px rgba(0,0,0,0.25);
+	-moz-transform:rotate(1deg);
+	-webkit-transform:rotate(1deg);
+	-o-transform:rotate(1deg);
+	transform:rotate(1deg);
+}
+#card:after{
+	z-index:-2;
+	-moz-transform:rotate(-1.5deg);
+	-webkit-transform:rotate(-1.5deg);
+	-o-transform:rotate(-1.5deg);
+	transform:rotate(-1.5deg);
+}
+
+
+/*------------------------------------*\
+	IMAGES
+\*------------------------------------*/
+#download{
+	float:right;
+	margin-right:1em;
+}
+
+#qrcode{
+	float:left;
+	margin: 0.7em 1em 1.5em 0;
+}
+
+
+/*------------------------------------*\
+	MISC
+\*------------------------------------*/
+::selection			{ background:#589b34; color:#fff; }
+::-moz-selection	{ background:#589b34; color:#fff; }
+
+
+
+/*------------------------------------*\
+	MOBILE
+\*------------------------------------*/
+@media (max-width: 480px){
+
+	.contact div{
+		width:auto!important;
+	}
+
+	#download{
+		width:50px;
+		height:50px;
+		margin-right:5px;
+	}
+
+	#tagline{
+		clear:both;
+	}
+	.contact h1{
+		line-height:40px;
+}
+
+
+/*------------------------------------*\
+	INSTRUCTIONS
+\*------------------------------------*/
+@-webkit-keyframes mask{
+0%{
+	opacity:0;
+}
+10%{
+	opacity:1;
+	top:0;
+	right:0;
+	bottom:0;
+}
+90%{
+	opacity:1;
+	top:0;
+	right:0;
+	bottom:0;
+}
+99%{
+	opacity:0;
+	top:0;
+	right:0;
+	bottom:0;
+}
+100%{
+	opacity:0;
+}
+}
+
+@-webkit-keyframes message{
+0%{
+	opacity:0;
+}
+10%{
+	opacity:1;
+	top:50%;
+	left:50%;
+}
+90%{
+	opacity:1;
+	top:50%;
+	left:50%;
+}
+99%{
+	opacity:0;
+	top:50%;
+	left:50%;
+}
+100%{
+	opacity:0;
+}
+}
+
+}
+
+@media (max-width: 480px) and (orientation: portrait){
+
+	#cardContact{
+		position:absolute;
+		left:-9999px;
+	}
+
+}
+@media (max-width: 480px) and (orientation: landscape){
+
+	#cardAbout{
+		position:absolute;
+		left:-9999px;
+	}
+
+}
+
+/*------------------------------------*\
+	TYPE
+\*------------------------------------*/
+/*--- HEADINGS ---*/
+#card h1,h2,h3,h4,h5,h6{
+	margin-bottom:24px;
+	line-height:30px;
+}
+#card h1,h2{
+	font-family:"crete-rounded-web-1", "crete-rounded-web-2", Rockwell, Cambria, Georgia, serif;
+	font-size:2em;
+	margin:0;
+}
+#card h2{
+	margin-bottom:24px;
+}
+#card h3{
+	font-size:24px;
+}
+
+/*--- PARAGRAPHS ---*/
+#card p{
+	margin-bottom:24px;
+	line-height:1.2em;
+}
+#tagline{
+	font-family:"crete-rounded-web-1", "crete-rounded-web-2", Rockwell, Cambria, Georgia, serif;
+	color:#999;
+	font-style:italic;
+}
+
+
