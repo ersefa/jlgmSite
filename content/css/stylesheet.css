@@ -313,23 +313,6 @@ footer img:hover, footer a:hover {
 }
 
 @media only screen and (max-width: 780px){
-	footer li:nth-child(odd) {
-		float: left;
-		clear: left;	
-		margin-left: 0.5em;
-	}
-	footer li:nth-child(even) {
-		float: right;
-		clear: right;	
-		margin-right: 0.5em;
-	}
-}
-
-@media only screen and (max-width: 540px){
-	html{
-		padding: 0.4em;
-	}
-
 	header {
 		text-align: center;
 		margin-top: 0.5em;
@@ -339,6 +322,28 @@ footer img:hover, footer a:hover {
 		font-size: 1.5em;
 	}
 
+	header h1 span {
+		display:none;
+	}
+
+	#title {
+		float: none;		
+		width: 100%;	
+	}
+		
+	#flag {
+		width: 100%;
+	}
+
+	#flag ul {
+		text-align:center;
+	}
+
+	header #flag img{
+		width: 10%;
+	}
+
+
 	nav {
 		text-align: center;
 		overflow: hidden;
@@ -347,6 +352,29 @@ footer img:hover, footer a:hover {
 	nav li {
 		display: inline;
 		float: none;
+	}
+
+
+	footer li:nth-child(odd) {
+		float: left;
+		clear: left;	
+		margin-left: 0.5em;
+	}
+
+	footer li:nth-child(even) {
+		float: right;
+		clear: right;	
+		margin-right: 0.5em;
+	}
+
+	#flag {
+		float: none;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	html{
+		padding: 0.4em;
 	}
 
 	footer li:nth-child(odd) {
@@ -361,6 +389,11 @@ footer img:hover, footer a:hover {
 	footer li {
 		float: none;
 		display: block;	
+	}
+
+	nav li {
+		font-size: 1.5em;
+		display: block;
 	}
 }
 
