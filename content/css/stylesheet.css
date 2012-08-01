@@ -92,38 +92,30 @@ a {
 
 a:link,
 a:visited {
-	color: #f30;
+	text-decoration:none;
 }
 
 a:hover {
-	color: orange;
+	color: #003E5F;
 }
 
 strong {
-	color: orange;	
 }
 
 h1 {
-	font-size: 2.5em; 
-	font-weight: normal;
-	margin: 0.2em auto;
+	font: 18px 'Fredericka the Great', cursive;
+	color: #003E5F;
 }
 
 h2 {
-	font-size: 1.5em;
-	font-weight: normal;
-	margin: 1em auto;
 }
 
 h3 {
-	font-size: 1.2em;
-	font-weight: bold;
-	margin-top: 1.5em;
 }
 
 p {
-	line-height: 1.5em; 
-	padding: 0 20px 5px;
+	line-height: 1.2em; 
+	padding: 5px 0 5px 20px;
 }
 
 ul {
@@ -132,7 +124,7 @@ ul {
 }
 
 ul li {
-	margin: 0.4em 0; 
+	margin: 0.4em; 
 }
 
 
@@ -147,12 +139,18 @@ header {
 
 #title {
 	float: left;
-	width: 40em;
+	width: 80%;
+}
+
+#title h1 {
+	color: #06334C;
+	font: 70px 'Dr Sugiyama', sans-serif;
+	margin: 0;
 }
 
 #flag {
 	float: right;
-	width: 20em;
+	width: 20%;
 	margin: .5em 0 1em 0;
 }
 
@@ -166,7 +164,7 @@ header {
 }
 
 #flag img {
-	width: 20%;
+	width: 35%;
 
 	opacity: 0.5;
 	-moz-transition: opacity .5s ease-in-out;
@@ -202,36 +200,47 @@ nav {
 	overflow: hidden;
 	border-bottom: 1px solid black;
 	margin-bottom: 2.25em;
+	font: 18px 'Fredericka the Great', cursive;
+	text-transform: uppercase;
 }
 
 nav li {
 	float: right;
 	padding: 0em 1em 0em 0em;
 	list-style: none;
+
+	-moz-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;	
 }
 
-/* Disable active link 
-nav#home li.home > a, 
-nav#inicio li.inicio > a,
-nav#curriculum li.curriculum > a,
-nav#contact li.contact > a,
-nav#contacto li.contacto > a,
-nav#about li.about > a,
-nav#acerca li.acerca > a {
-	pointer-events: none;
-	cursor: default;
-	color: black;	
-}*/
+nav li:hover {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
 
+nav ul li .active{
+	color: #FA6900;	
+	
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: color 0 ease-in;
+    transition: none;
+
+	-moz-transform: none;
+	-webkit-transform: none;
+	-o-transform: none;
+	transform: none;
+}
 
 
 /*************************/
 /*       CONTENT         */
 /*************************/
 
-.about h2 {
-	text-decoration:underline;
-}
 
 section {
 	font-size: 1.1em; 
@@ -240,7 +249,7 @@ section {
 }
 
 section h1 {
-	border-left: 2px solid orange; 
+	border-left: 2px solid #FA6900; 
 	font-size: 1.4em; 
 	margin-bottom: 10px; 
 	padding-left: 5px; 
@@ -275,7 +284,7 @@ footer ul{
 
 footer li {	
 	display: inline;
-	padding: 0 1em 0 1em;
+	padding: 0 1em 0 1em;	
 }
 
 footer img {
@@ -283,6 +292,15 @@ footer img {
 	width:	30px;
 	vertical-align:middle;
 	padding: 0 .4em .25em 0;
+}
+
+
+
+footer img:hover, footer a:hover {
+	-moz-transform: scale(1.3);
+	-webkit-transform: scale(1.3);
+	-o-transform: scale(1.3);
+	transform: scale(1.3);
 }
 
 /******************************/
@@ -361,7 +379,7 @@ footer img {
 #experience article, #studies article {margin: 15px 0 37px 130px; padding-left: 5px; position: relative; border: 1px solid #FCE7BA}
 #experience article:last-child, #studies article:last-child {margin-bottom: 0}
 #experience article:hover, #studies article:hover {border: 1px solid #FF9000; background: transparent}
-#experience article h1, #studies article h1, #languages article h1, #education article h1 {border: none; font-size: 1.1em; font-style: italic; font-weight: bold; padding: 0; text-transform: none;}
+#experience article h1, #studies article h1, #languages article h1, #education article h1 {border: none; font-size: 1em; font-style: italic; font-weight: bold; padding: 0; text-transform: none;}
 #experience article h1 span, #studies article h1 span {color: #777; font-size: 0.95em; font-weight: normal;}
 #experience article h2, #studies article h2 {background: transparent; display: inline; font-size: 1em; font-weight: normal; padding: 1.5em; color: orange;}
 #experience article .start, #experience article .end, #studies article .start, #studies article .end  {background: transparent; border-top: 1px solid orange; font-size: 1em; left: -130px; padding: 4px 0; position: absolute; text-align: center; top: 25px; width: 115px;}
@@ -626,4 +644,5 @@ footer img {
 	color:#999;
 	font-style:italic;
 }
+
 
