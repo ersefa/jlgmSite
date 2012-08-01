@@ -13,7 +13,6 @@
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 compile '/' do
-  filter :kramdown
   layout 'default'
 end
 
@@ -31,6 +30,7 @@ compile '*' do
   else
     filter :erb
     layout 'default'
+	filter :relativize_paths, :type => :html
   end
 end
 

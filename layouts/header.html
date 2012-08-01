@@ -1,0 +1,21 @@
+<div id="title">
+	<h1>José Luis García Martínez</h1>
+</div>
+
+<div id="flag">
+	<ul>
+		<% translations_of(@item).each do |t| %>
+			<li>
+				<% if @item == t %>
+					<span class="current">
+						<img src="<%= get_flag_url(t) %>" alt="Flag"/>
+					</span>
+				<% else %>
+					<a href="<%= t.path %>">
+						<img src="<%= get_flag_url(t) %>" alt="Flag"/>
+					</a>
+				<% end %>
+			</li>
+		<% end %>
+	</ul>
+</div>

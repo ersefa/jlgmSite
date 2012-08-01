@@ -1,0 +1,17 @@
+<% if language_code_of(@item) == 'en' %>
+			<ul>
+				<li class="about"><%= link_to_unless_current('About', '/en/about/') %></li>
+				<li class="contact"><%= link_to_unless_current('Contact', '/en/contact/') %></li>
+				<li class="curriculum"><%= link_to_unless_current('Curriculum', '/en/curriculum/') %></li>
+				<li class="home"><%= link_to_unless_current('Home', '/en/') %></li>
+			</ul>
+<% elsif language_code_of(@item) == 'es' %>
+			<ul>
+				<li class="acerca"><%= link_to_unless_current('Acerca De', '/es/acerca/') %></li>
+				<li class="contacto"><%= link_to_unless_current('Contacto', '/es/contacto/') %></li>
+				<li class="curriculum"><%= link_to_unless_current('Curriculum', '/es/curriculum/') %></li>
+				<li class="inicio"><%= link_to_unless_current('Inicio', '/es/') %></li>
+			</ul>
+<% else %>
+			<!-- WARNING: untranslated -->
+<% end %>
