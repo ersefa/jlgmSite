@@ -1,0 +1,23 @@
+/* Página personal José Luis García Martínez */
+/* http://www.jlgm.org */
+/* humanstxt.org */
+
+/* SITE */
+Language: English & Spanish
+Contact: jose@jlgm.org
+Since: June 2012
+Last update: 2012/08/05
+Standards: HTML5, CSS3,..
+Components: nanoc, Ruby on Rails
+Software: pluma, FileZilla, Git, nanoc
+
+/* TEAM */
+Web Designer & Developer: José Luis García Martínez.
+Site: http://www.jlgm.org
+Twitter: @ersefa
+Location: Madrid, Spain.
+
+/* THANKS */
+Name: Daniel Perez
+Site: http://www.unindented.org
+
