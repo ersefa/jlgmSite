@@ -158,7 +158,8 @@ header {
 }
 
 #flag img {
-	width: 35%;
+	width: 25%;
+	margin-top: 20px;
 
 	opacity: 0.5;
 
