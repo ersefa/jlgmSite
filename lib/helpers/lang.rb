@@ -3,19 +3,20 @@ module LangHelper
   		'en' => 'English',
   		'es' => 'Spanish'
 	}
-
-	 CANONICAL_IDENTIFIER_MAPPING = {
+	CANONICAL_IDENTIFIER_MAPPING = {
 		'en' => {
-		  '/'                   => '/en/',
-		  '/curriculum/'        => '/en/curriculum/',
-		  '/about/'             => '/en/about/',
-		  '/contact/'        	=> '/en/contact/'
+			'/'         	    => '/en/',
+			'/curriculum/'      => '/en/curriculum/',
+			'/about/'			=> '/en/about/',
+			'/contact/'			=> '/en/contact/',
+			'/error/'			=> '/en/error/'	
 		},
 		'es' => {
-		  '/'                   => '/es/',
-		  '/curriculum/'        => '/es/curriculum/',
-		  '/about/'             => '/es/acerca/',
-		  '/contact/'        	=> '/es/contacto/'
+			'/'                 => '/es/',
+			'/curriculum/'      => '/es/curriculum/',
+			'/about/'           => '/es/acerca/',
+			'/contact/'        	=> '/es/contacto/',
+			'/error/'			=> '/es/error/'	
 		}
   	}
 
