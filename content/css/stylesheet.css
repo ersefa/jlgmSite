@@ -299,7 +299,7 @@ footer a:link,
 footer a:visited,
 footer li  {
 	text-decoration:none;
-	color: orangered;
+	color: #FA6900;
 }
 
 footer li {	
@@ -427,14 +427,17 @@ footer img:hover, footer a:hover {
 		font-size: 1.5em;
 		display: block;
 	}
+
+	#experience time, #experience  {
+		display: none;
+	} 
+
 }
 
 /***********************************************************************************************************************/
 /*                                                         ABOUT                                                       */
 /***********************************************************************************************************************/
 section section h1{border: none; font-size: 1em; padding: 0; text-transform: none;}
-
-
 
 
 /***********************************************************************************************************************/
@@ -449,15 +452,15 @@ section section h1{border: none; font-size: 1em; padding: 0; text-transform: non
 #experience article, #studies article {margin: 15px 0 37px 130px; padding-left: 5px; position: relative; border: 1px solid #FCE7BA}
 #experience article:last-child, #studies article:last-child {margin-bottom: 0}
 #experience article:hover, #studies article:hover {border: 1px solid #FF9000; background: transparent}git 
-#experience article h1, #studies article h1, #languages article h1, #education article h1 {border: none; font-size: 1em; padding: 0; text-transform: none;}
+
 #experience article h1 span, #studies article h1 span {color: #777; font-size: 0.95em; font-weight: normal;}
-#experience article h2, #studies article h2 {background: transparent; display: inline; font-size: 1em; font-weight: normal; padding: 1.5em; color: orange;}
-#experience article .start, #experience article .end, #studies article .start, #studies article .end  {background: transparent; border-top: 1px solid orange; font-size: 1em; left: -130px; padding: 4px 0; position: absolute; text-align: center; top: 25px; width: 115px;}
+#experience article h2, #studies article h2 {background: transparent; display: inline; font-size: 1em; font-weight: normal; padding: 1.5em; color: #FA6900;}
+#experience article .start, #experience article .end, #studies article .start, #studies article .end  {background: transparent; border-top: 1px solid #FA6900; font-size: 1em; left: -130px; padding: 4px 0; position: absolute; text-align: center; top: 25px; width: 115px;}
 #experience article .end, #studies article .end {top: 0; border: none}
 #experience article p, #studies article p {font-size: 1.1em; line-height: 22px; margin: 10px 0 0; padding-left: 0;}
-#studies article .end {border-bottom: 1px solid orange;}
+#studies article .end {border-bottom: 1px solid #FA6900;}
 #languages article, #education article {padding-left:20px;}
-
+#experience article h1, #studies article h1, #languages article h1, #education article h1 {border: none; font-size: 1em; padding: 0; text-transform: none;}
 
 #cv-pdf img {
 	background: transparent;
@@ -503,11 +506,11 @@ section section h1{border: none; font-size: 1em; padding: 0; text-transform: non
 
 @media screen and (max-width:480px) {
   #experience article {margin: 40px 0 37px;}
-  #experience article .start, #experience article .end {padding: 0px; left: 0; top: -25px; border: none; border-right: 1px solid orange;}
+  #experience article .start, #experience article .end {padding: 0px; left: 0; top: -25px; border: none; border-right: 1px solid #FA6900;}
   #experience article .end {left: 125px; top: -25px; border: none}
   
   #studies article {margin: 40px 0 37px;}
-  #studies article .start, #experience article .end {padding: 0px; left: 0; top: -25px; border: none; border-right: 1px solid orange;}
+  #studies article .start, #experience article .end {padding: 0px; left: 0; top: -25px; border: none; border-right: 1px solid #FA6900;}
   #experience article .end {left: 125px; top: -25px; border: none}
 }
 
