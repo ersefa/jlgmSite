@@ -87,8 +87,9 @@ body {
 }
 
 h1 {
-	font: 18px 'Fredericka the Great', cursive;
+	font: 18px 'Russo One', cursive;
 	color: #06334C;
+	letter-spacing: 1px;
 }
 p {
 	line-height: 1.2em; 
@@ -139,7 +140,7 @@ header {
 
 #title h1 {
 	color: #06334C;
-	font: 49px 'Fredericka the Great', sans-serif;
+	font: 45px 'Russo One', sans-serif;
 	margin: 0;
 }
 
@@ -191,7 +192,7 @@ nav {
 	overflow: hidden;
 	border-bottom: 1px solid black;
 	margin-bottom: 2.25em;
-	font: 18px 'Fredericka the Great', cursive;
+	font: 18px 'Russo One', cursive;
 	text-transform: uppercase;
 }
 
@@ -431,7 +432,7 @@ footer img:hover, footer a:hover {
 /***********************************************************************************************************************/
 /*                                                         ABOUT                                                       */
 /***********************************************************************************************************************/
-section section h1{border: none; font-size: 1em; font-weight: bold; padding: 0; text-transform: none;}
+section section h1{border: none; font-size: 1em; padding: 0; text-transform: none;}
 
 
 
@@ -448,7 +449,7 @@ section section h1{border: none; font-size: 1em; font-weight: bold; padding: 0; 
 #experience article, #studies article {margin: 15px 0 37px 130px; padding-left: 5px; position: relative; border: 1px solid #FCE7BA}
 #experience article:last-child, #studies article:last-child {margin-bottom: 0}
 #experience article:hover, #studies article:hover {border: 1px solid #FF9000; background: transparent}
-#experience article h1, #studies article h1, #languages article h1, #education article h1 {border: none; font-size: 1em; font-weight: bold; padding: 0; text-transform: none;}
+#experience article h1, #studies article h1, #languages article h1, #education article h1 {border: none; font-size: 1em; padding: 0; text-transform: none;}
 #experience article h1 span, #studies article h1 span {color: #777; font-size: 0.95em; font-weight: normal;}
 #experience article h2, #studies article h2 {background: transparent; display: inline; font-size: 1em; font-weight: normal; padding: 1.5em; color: orange;}
 #experience article .start, #experience article .end, #studies article .start, #studies article .end  {background: transparent; border-top: 1px solid orange; font-size: 1em; left: -130px; padding: 4px 0; position: absolute; text-align: center; top: 25px; width: 115px;}
@@ -636,9 +637,10 @@ section section h1{border: none; font-size: 1em; font-weight: bold; padding: 0; 
 	color:#06334C;
 }
 #card h1,h2{
-	font-family:"Fredericka the Great", Rockwell, Cambria, Georgia, serif;
+	font-family:"Russo One", Rockwell, Cambria, Georgia, serif;
 	font-size:1.8em;
 	margin-bottom: .2em;
+	letter-spacing: 1px;
 }
 #card h2{
 	margin-bottom:24px;
@@ -653,8 +655,9 @@ section section h1{border: none; font-size: 1em; font-weight: bold; padding: 0; 
 	line-height:1.2em;
 }
 #tagline{
-	font-family: "Fredericka the Great", Rockwell, Cambria, Georgia, serif;
+	font-family: "Russo One", Rockwell, Cambria, Georgia, serif;
 	color:#FA6900;
+	letter-spacing: 1px;
 }
 
 
