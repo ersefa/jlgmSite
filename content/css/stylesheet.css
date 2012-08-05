@@ -86,46 +86,18 @@ body {
 	padding: 0 0.5em 3em 0.5em;
 }
 
-a {
-	text-decoration: none;
-}
-
-a:link,
-a:visited {
-	text-decoration:none;
-}
-
-a:hover {
-}	
-
-strong {
-}
-
 h1 {
 	font: 18px 'Fredericka the Great', cursive;
-	color: #003E5F;
+	color: #06334C;
 }
-
-h2 {
-}
-
-h3 {
-}
-
 p {
 	line-height: 1.2em; 
 	padding: 5px 0 5px 20px;
 }
 
 ul {
-	font-size: 1.1em; 
-	margin-left: 0.8em;
+	font-size: 1.1em;
 }
-
-ul li {
-	margin: 0.4em; 
-}
-
 
 /*************************/
 /*       HEADER          */
@@ -144,17 +116,30 @@ header {
 
 #uc img{
 	width: 100%;
+
+	-moz-transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;	
+}
+
+#uc img:hover{
+	-moz-transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	-o-transform: rotate(30deg);
+	transform: rotate(30deg);	
 }
 
 #title {
 	float: left;
+	text-align: center;
 	width: 65%;
 	padding-top: 15px;
 }
 
 #title h1 {
 	color: #06334C;
-	font: 50px 'Fredericka the Great', sans-serif;
+	font: 49px 'Fredericka the Great', sans-serif;
 	margin: 0;
 }
 
@@ -176,10 +161,6 @@ header {
 	width: 35%;
 
 	opacity: 0.5;
-	-moz-transition: opacity .5s ease-in-out;
-	-webkit-transition: opacity .5s ease-in-out;
-	-o-transition: opacity .5s ease-in-out;
-	transition: opacity .5s ease-in-out;
 
 	-moz-transition: all .5s ease-in-out;
 	-webkit-transition: all .5s ease-in-out;
@@ -217,7 +198,6 @@ nav li {
 	float: right;
 	padding: 0em 1em 0em 0em;
 	list-style: none;
-	color: #06334C;
 
 	-moz-transition: all .2s ease-in-out;
 	-webkit-transition: all .2s ease-in-out;
@@ -226,14 +206,22 @@ nav li {
 }
 
 nav li:hover {
-	color: #003E5F;
 	-moz-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	-o-transform: scale(1.1);
 	transform: scale(1.1);	
 }
 
-nav ul li .active{
+nav li a {	
+	color: #06334C;
+	text-decoration: none;
+}
+
+nav li a:hover{	
+	color: #031634;
+}
+
+nav li .active{
 	color: #FA6900;	
 	
     -moz-transition: none;
@@ -267,8 +255,11 @@ section h1 {
 	text-transform: uppercase;
 }
 
-
+section ul {
+	margin-left: 0.8em;
+}
 section ul li {
+	margin: 0.4em; 
 	font-size: 0.8em;
 	list-style: circle inside none; 
 	cursor: default
@@ -278,6 +269,14 @@ section ul li:hover {
 	list-style: disc inside none;
 }
 
+
+section a:link,
+section a:visited,
+#card a:link,
+#card a:visited {
+	text-decoration:none;
+	color: #003E5F;
+}
 
 /*************************/
 /*       FOOTER          */
@@ -293,9 +292,17 @@ footer ul{
 	text-align: center;
 }
 
+
+footer a:link,
+footer a:visited,
+footer li  {
+	text-decoration:none;
+	color: orangered;
+}
+
 footer li {	
 	display: inline;
-	padding: 0 1em 0 1em;	
+	padding: 0 1em 0 1em;
 }
 
 footer img {
@@ -319,7 +326,11 @@ footer img:hover, footer a:hover {
 /******************************/
 @media only screen and (max-width: 980px){
 	footer li:nth-child(4) {
-		display: block;	
+		display: block;
+	}
+	
+	header #title span#second {
+		display: none;
 	}
 }
 
@@ -333,21 +344,23 @@ footer img:hover, footer a:hover {
 		font-size: 1.5em;
 	}
 
-	header h1 span {
-		display:none;
-	}
-
 	#title {
 		float: none;		
 		width: 100%;	
 	}
+
+	#uc {
+		display: none;
+	}	
 		
 	#flag {
 		width: 100%;
+		margin: 10px 0 15px 0;
 	}
 
 	#flag ul {
 		text-align:center;
+		padding-left: 5px;
 	}
 
 	#flag img{
@@ -363,19 +376,20 @@ footer img:hover, footer a:hover {
 	nav li {
 		display: inline;
 		float: none;
+		padding-right: .5em;
 	}
 
 
 	footer li:nth-child(odd) {
 		float: left;
 		clear: left;	
-		margin-left: 0.5em;
+		margin-left: 1em;
 	}
 
 	footer li:nth-child(even) {
 		float: right;
 		clear: right;	
-		margin-right: 0.5em;
+		margin-right: 1em;
 	}
 
 	#flag {
@@ -383,9 +397,13 @@ footer img:hover, footer a:hover {
 	}
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 480px){
 	html{
 		padding: 0.4em;
+	}
+
+	header #title span#first {
+		display: none;
 	}
 
 	footer li:nth-child(odd) {
@@ -399,10 +417,11 @@ footer img:hover, footer a:hover {
 	
 	footer li {
 		float: none;
-		display: block;	
+		display: block;
 	}
 
 	nav li {
+		padding: 0;
 		font-size: 1.5em;
 		display: block;
 	}
@@ -423,7 +442,7 @@ footer img:hover, footer a:hover {
 #experience article, #studies article {margin: 15px 0 37px 130px; padding-left: 5px; position: relative; border: 1px solid #FCE7BA}
 #experience article:last-child, #studies article:last-child {margin-bottom: 0}
 #experience article:hover, #studies article:hover {border: 1px solid #FF9000; background: transparent}
-#experience article h1, #studies article h1, #languages article h1, #education article h1 {border: none; font-size: 1em; font-style: italic; font-weight: bold; padding: 0; text-transform: none;}
+#experience article h1, #studies article h1, #languages article h1, #education article h1 {border: none; font-size: 1em; font-weight: bold; padding: 0; text-transform: none;}
 #experience article h1 span, #studies article h1 span {color: #777; font-size: 0.95em; font-weight: normal;}
 #experience article h2, #studies article h2 {background: transparent; display: inline; font-size: 1em; font-weight: normal; padding: 1.5em; color: orange;}
 #experience article .start, #experience article .end, #studies article .start, #studies article .end  {background: transparent; border-top: 1px solid orange; font-size: 1em; left: -130px; padding: 4px 0; position: absolute; text-align: center; top: 25px; width: 115px;}
@@ -460,7 +479,9 @@ footer img:hover, footer a:hover {
 	transform: scale(1.1);
 }
 
-/* MEDIA QUERIES */
+/****************************/
+/* CURRICULUM MEDIA QUERIES */
+/****************************/
 @media screen and (max-width:768px) {
   .contact li {font-size: 0.7em;}
 }
@@ -555,14 +576,6 @@ footer img:hover, footer a:hover {
 
 
 /*------------------------------------*\
-	MISC
-\*------------------------------------*/
-::selection			{ background:#589b34; color:#fff; }
-::-moz-selection	{ background:#589b34; color:#fff; }
-
-
-
-/*------------------------------------*\
 	MOBILE
 \*------------------------------------*/
 @media (max-width: 480px){
@@ -582,64 +595,13 @@ footer img:hover, footer a:hover {
 	}
 	.contact h1{
 		line-height:40px;
+	}
 }
 
 
-/*------------------------------------*\
-	INSTRUCTIONS
-\*------------------------------------*/
-@-webkit-keyframes mask{
-0%{
-	opacity:0;
-}
-10%{
-	opacity:1;
-	top:0;
-	right:0;
-	bottom:0;
-}
-90%{
-	opacity:1;
-	top:0;
-	right:0;
-	bottom:0;
-}
-99%{
-	opacity:0;
-	top:0;
-	right:0;
-	bottom:0;
-}
-100%{
-	opacity:0;
-}
-}
-
-@-webkit-keyframes message{
-0%{
-	opacity:0;
-}
-10%{
-	opacity:1;
-	top:50%;
-	left:50%;
-}
-90%{
-	opacity:1;
-	top:50%;
-	left:50%;
-}
-99%{
-	opacity:0;
-	top:50%;
-	left:50%;
-}
-100%{
-	opacity:0;
-}
-}
-
-}
+/*******************************/
+/*    CONTACT MEDIA QUERIES    */
+/*******************************/
 
 @media (max-width: 480px) and (orientation: portrait){
 
@@ -686,7 +648,6 @@ footer img:hover, footer a:hover {
 }
 #tagline{
 	font-family: "Fredericka the Great", Rockwell, Cambria, Georgia, serif;
-	font-style:italic;
 	color:#FA6900;
 }
 
