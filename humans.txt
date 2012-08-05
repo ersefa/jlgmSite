@@ -1,4 +1,4 @@
-/* Página personal José Luis García Martínez */
+/* Jose Luis Garcia Martinez personal site */
 /* http://www.jlgm.org */
 /* humanstxt.org */
 
@@ -9,10 +9,10 @@ Since: June 2012
 Last update: 2012/08/05
 Standards: HTML5, CSS3,..
 Components: nanoc, Ruby on Rails
-Software: pluma, FileZilla, Git, nanoc
+Software: pluma, FileZilla, rsync, Git, nanoc
 
 /* TEAM */
-Web Designer & Developer: José Luis García Martínez.
+Web Designer & Developer: Jose Luis Garcia Martinez.
 Site: http://www.jlgm.org
 Twitter: @ersefa
 Location: Madrid, Spain.
