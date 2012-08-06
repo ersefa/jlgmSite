@@ -411,7 +411,7 @@ section section h1{border: none; font-size: 1em; padding: 0; text-transform: non
 
 #experience article h1 span, #studies article h1 span {color: #777; font-size: 0.95em; font-weight: normal;}
 #experience article h2, #studies article h2 {background: transparent; display: inline; font-size: 1em; font-weight: normal; padding: 1.5em; color: #FA6900;}
-#experience article .start, #experience article .end, #studies article .start, #studies article .end  {background: transparent; border-top: 1px solid #FA6900; font-size: 1em; left: -130px; padding: 4px 0; position: absolute; text-align: center; top: 25px; width: 115px;}
+#experience article .start, #experience article .end, #studies article .start, #studies article .end  {background: transparent; border-top: 1px solid #FA6900; font-size: 1em; left: -130px; padding: 4px 0; position: absolute; text-align: center; top: 25px; width: 120px;}
 #experience article .end, #studies article .end {top: 0; border: none}
 #experience article p, #studies article p {font-size: 1.1em; line-height: 22px; margin: 10px 0 0; padding-left: 0;}
 #studies article .end {border-bottom: 1px solid #FA6900;}
