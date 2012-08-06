@@ -389,9 +389,44 @@ footer img:hover, footer a:hover {
 }
 
 /***********************************************************************************************************************/
+/*                                                         WORK                                                        */
+/***********************************************************************************************************************/
+.work article {
+	margin-bottom: 40px;
+}
+
+.work article:last-child {
+	margin-bottom: 0;
+}
+
+.work article h1 {
+	border: none; 
+	font-size: 1em; 
+}
+
+.work article .image {
+	text-align: center
+}
+
+.work article img {
+	width: 80%;
+	margin: 10px 0 10px 0;
+
+	-moz-box-shadow: -7px 7px 10px 2px #888;
+	-webkit-box-shadow: -7px 7px 10px 2px #888;
+	box-shadow: -7px 7px 10px 2px #888;
+}
+
+
+/***********************************************************************************************************************/
 /*                                                         ABOUT                                                       */
 /***********************************************************************************************************************/
-section section h1{border: none; font-size: 1em; padding: 0; text-transform: none;}
+.about section section h1{
+	border: none; 
+	font-size: 1em; 
+	padding: 0; 
+	text-transform: none;
+}
 
 
 /***********************************************************************************************************************/
