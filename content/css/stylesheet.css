@@ -144,46 +144,58 @@ header {
 	margin: 0;
 }
 
-#flag {
+#language {
 	float: right;
 	width: 20%;
 	margin-bottom: 1.5em;
+
+	font: 14px 'Russo One', cursive;
+	text-transform: uppercase;
 }
 
-#flag ul {
+#language ul {
 	text-align: right;
 }
 
-#flag ul li {
+#language li {
 	display: inline;
 	margin: 0 .5em 0 .5em;
+
+	-moz-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;	
 }
 
-#flag img {
-	width: 25%;
-	margin-top: 5px;
-
-	opacity: 0.5;
-
-	-moz-transition: all .5s ease-in-out;
-	-webkit-transition: all .5s ease-in-out;
-	-o-transition: all .5s ease-in-out;
-	transition: all .5s ease-in-out;	
-	
-	-moz-box-shadow: -7px 7px 10px 2px #888;
-	-webkit-box-shadow: -7px 7px 10px 2px #888;
-	box-shadow: -7px 7px 10px 2px #888;
+#language li a {
+	color: #06334C;
+	text-decoration: none;
 }
 
-#flag img:hover {
-	opacity: 1;	
+#language li a:hover{	
+	color: #031634;
 
 	-moz-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	-o-transform: scale(1.1);
-	transform: scale(1.1);
-	
+	transform: scale(1.1);	
+
 }
+
+#language li .current{
+	color: #FA6900;	
+	
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: color 0 ease-in;
+    transition: none;
+
+	-moz-transform: none;
+	-webkit-transform: none;
+	-o-transform: none;
+	transform: none;
+}
+
 
 /*************************/
 /*         NAV           */
@@ -209,6 +221,8 @@ nav li {
 }
 
 nav li:hover {
+	color: #031634;
+
 	-moz-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	-o-transform: scale(1.1);
@@ -218,10 +232,6 @@ nav li:hover {
 nav li a {	
 	color: #06334C;
 	text-decoration: none;
-}
-
-nav li a:hover{	
-	color: #031634;
 }
 
 nav li .active{
@@ -332,10 +342,6 @@ footer img:hover, footer a:hover {
 	footer li:nth-child(4) {
 		display: block;
 	}
-	/*
-	header #title span#second {
-		display: none;
-	}*/
 }
 
 @media only screen and (max-width: 780px){
@@ -359,27 +365,14 @@ footer img:hover, footer a:hover {
 		text-align: center;
 	}
 
-
-	/*
-	#uc {
-		display: none;
-	}	
-	*/	
-
-	#flag {
+	#language {
 		width: 100%;
 		margin: 10px 0 15px 0;
 	}
 
-	#flag ul {
+	#language ul {
 		text-align:center;
-		padding-left: 5px;
 	}
-
-	#flag img{
-		width: 10%;
-	}
-
 
 	nav {
 		text-align: center;
@@ -405,7 +398,7 @@ footer img:hover, footer a:hover {
 		margin-right: 1em;
 	}
 
-	#flag {
+	#language {
 		float: none;
 	}
 }
@@ -477,7 +470,6 @@ section section h1{border: none; font-size: 1em; padding: 0; text-transform: non
 	background: transparent;
 	float: right;
 	width: 15%;
-
 
 	opacity: 0.8;
 
@@ -588,6 +580,7 @@ section section h1{border: none; font-size: 1em; padding: 0; text-transform: non
 #download{
 	float:right;
 	margin-right:1em;
+	margin-left:.5em;
 }
 
 #qrcode{

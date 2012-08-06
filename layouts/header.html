@@ -2,17 +2,17 @@
 	<h1>José Luis <span id="first">García </span><span id="second">Martínez</span></h1>
 </div>
 
-<div id="flag">
+<div id="language">
 	<ul>
 		<% translations_of(@item).each do |t| %>
 			<li>
 				<% if @item == t %>
 					<span class="current">
-						<img src="<%= get_flag_url(t) %>" alt="Flag"/>
+						<%= language_name_of(t) %>
 					</span>
 				<% else %>
 					<a href="<%= t.path %>">
-						<img src="<%= get_flag_url(t) %>" alt="Flag"/>
+						<%= language_name_of(t) %>
 					</a>
 				<% end %>
 			</li>

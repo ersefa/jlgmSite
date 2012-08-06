@@ -3,6 +3,12 @@ module LangHelper
   		'en' => 'English',
   		'es' => 'Spanish'
 	}
+
+	SPANISH_LANGUAGE_NAMES = {
+  		'en' => 'Inglés',
+  		'es' => 'Español'
+	}
+
 	CANONICAL_IDENTIFIER_MAPPING = {
 		'en' => {
 			'/'         	    => '/en/',
@@ -44,7 +50,11 @@ module LangHelper
 	end
 
 	def language_name_for_code(code)
-  		ENGLISH_LANGUAGE_NAMES[code]
+		if language_code_of(item) === 'en'
+  			ENGLISH_LANGUAGE_NAMES[code]
+		else
+			SPANISH_LANGUAGE_NAMES[code]
+		end
 	end
 
 	def language_name_of(item)
