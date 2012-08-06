@@ -340,14 +340,12 @@ footer img:hover, footer a:hover {
 
 	footer li:nth-child(odd) {
 		float: left;
-		clear: left;	
-		margin-left: 1em;
+		clear: left;
 	}
 
 	footer li:nth-child(even) {
 		float: right;
-		clear: right;	
-		margin-right: 1em;
+		clear: right;
 	}
 
 	#language {
