@@ -300,7 +300,8 @@ footer a:link,
 footer a:visited,
 footer li  {
 	text-decoration:none;
-	color: #FA6900;
+	color: #06334C;
+	font-weight: bold;
 }
 
 footer li {	
