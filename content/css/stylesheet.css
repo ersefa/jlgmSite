@@ -295,8 +295,320 @@ footer img:hover, footer a:hover {
 	transform: scale(1.3);
 }
 
+
+/***********************************************************************************************************************/
+/*                                                         WORK                                                        */
+/***********************************************************************************************************************/
+.work article {
+	margin-bottom: 50px;
+}
+
+.work article:last-child {
+	margin-bottom: 0;
+}
+
+.work article h1 {
+	border: none; 
+	font-size: 1em; 
+}
+
+.work article h2 { 
+	font-size: .8em; 
+	font-weight: normal;
+	color: #FA6900;
+	padding-left: 20px;
+}
+
+.work article a {
+	color: #FA6900;
+}
+
+.work article .image {
+	text-align: center
+}
+
+.work article img {
+	width: 80%;
+	margin: 15px 0 15px 0;
+
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+
+	-moz-box-shadow: -7px 7px 10px 2px #888;
+	-webkit-box-shadow: -7px 7px 10px 2px #888;
+	box-shadow: -7px 7px 10px 2px #888;
+}
+
+
+/***********************************************************************************************************************/
+/*                                                       CURRICULUM                                                    */
+/***********************************************************************************************************************/
+
+#skills dl {
+	margin-left: 15px;
+}
+
+#skills dl dt {
+	clear: left; 
+	display: inline; 
+	float: left; 
+	margin: 10px 5px 10px 0; 
+	padding: 2px; 
+	text-align: right; 
+	width: 150px;
+}
+
+#skills dl dd {
+	background: #dfdfdf; 
+	display: inline; 
+	float: left; 
+	font-size: 1em; 
+	margin: 10px 4px; 
+	padding: 4px; 
+
+	-webkit-border-radius: 5px; 
+	border-radius: 5px; 
+	-webkit-box-shadow:  0px 1px 1px 0px rgba(0, 0, 0, 0.35);  
+	box-shadow:  0px 1px 1px 0px rgba(0, 0, 0, 0.35); 
+	cursor: default
+}
+
+#skills dl dd:hover {
+	background-color: #ccc; 
+	-webkit-box-shadow: inset 0px 2px 1px 1px rgba(0, 0, 0, 0.15); 
+	box-shadow: inset 0px 2px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+
+#experience article, 
+#studies article {
+	margin: 15px 0 37px 130px; 
+	padding-left: 5px; 
+	position: relative; 
+	border: 1px solid #FCE7BA
+}
+
+#experience article:last-child,
+#studies article:last-child {
+	margin-bottom: 0
+}
+
+#experience article:hover, 
+#studies article:hover {
+	border: 1px solid #FF9000; 
+	background: transparent
+}
+
+#experience article h1 span, 
+#studies article h1 span {
+	color: #777; 
+	font-size: 0.95em; 
+	font-weight: normal;
+}
+
+#experience article h2, 
+#studies article h2 {
+	background: transparent; 
+	display: inline; 
+	font-size: 1em; 
+	font-weight: normal; 
+	padding: 1.5em; 
+	color: #FA6900;
+}
+
+#experience article .start, 
+#experience article .end, 
+#studies article .start, 
+#studies article .end  {
+	background: transparent; 
+	border-top: 1px solid #FA6900; 
+	font-size: 1em; 
+	left: -130px; 
+	padding: 4px 0; 
+	position: absolute; 
+	text-align: center; 
+	top: 25px; 
+	width: 120px;
+}
+
+#experience article .end, 
+#studies article .end {
+	top: 0; 
+	border: none
+}
+
+#experience article p, 
+#studies article p {
+	font-size: 1.1em; 
+	line-height: 22px; 
+	margin: 10px 0 0; 
+	padding-left: 0;
+}
+
+#studies article .end {
+	border-bottom: 1px solid #FA6900;
+}
+
+#languages article, 
+#education article {
+	padding-left:20px;
+}
+
+#experience article h1, 
+#studies article h1, 
+#languages article h1, 
+#education article h1 {
+	border: none; 
+	font-size: 1em; 
+	padding: 0; 
+	text-transform: none;
+}
+
+#cv-pdf img {
+	background: transparent;
+	float: right;
+	width: 15%;
+
+	opacity: 0.8;
+
+	-moz-transition: all .8s ease-in-out;
+	-webkit-transition: all .8s ease-in-out;
+	-o-transition: all .8s ease-in-out;
+	transition: all .8s ease-in-out;
+
+	-moz-box-shadow: -7px 7px 10px 2px #888;
+	-webkit-box-shadow: -7px 7px 10px 2px #888;
+	box-shadow: -7px 7px 10px 2px #888;
+}
+
+#cv-pdf img:hover {
+	opacity: 1;	
+
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+
+/***********************************************************************************************************************/
+/*                                                       CONTACT                                                       */
+/***********************************************************************************************************************/
+
+.vcard {
+	display:none;
+}
+
+/****************************/
+/*			MAIN			*/
+/****************************/
+
+#card{
+	position:relative;
+	margin:4em auto;
+	padding:20px 20px 0 20px;
+	border:10px solid #f0f0f0;
+	background:#fff;
+	width:25em;
+
+	-moz-box-shadow:0 0 10px rgba(0,0,0,0.25);
+	-webkit-box-shadow:0 0 10px rgba(0,0,0,0.25);
+	-o-box-shadow:0 0 10px rgba(0,0,0,0.25);
+	box-shadow:0 0 10px rgba(0,0,0,0.25);
+}
+#card:before,
+#card:after{
+	content:" ";
+	display:block;
+	border:10px solid #f0f0f0;
+	background:#fff;
+	z-index:-1;
+	position:absolute;
+	top:-10px;
+	right:-10px;
+	bottom:-10px;
+	left:-10px;
+	
+	-moz-box-shadow:0 0 10px rgba(0,0,0,0.25);
+	-webkit-box-shadow:0 0 10px rgba(0,0,0,0.25);
+	-o-box-shadow:0 0 10px rgba(0,0,0,0.25);
+	box-shadow:0 0 10px rgba(0,0,0,0.25);
+	-moz-transform:rotate(1deg);
+	-webkit-transform:rotate(1deg);
+	-o-transform:rotate(1deg);
+	transform:rotate(1deg);
+}
+#card:after{
+	z-index:-2;
+	-moz-transform:rotate(-1.5deg);
+	-webkit-transform:rotate(-1.5deg);
+	-o-transform:rotate(-1.5deg);
+	transform:rotate(-1.5deg);
+}
+
+
+/****************************/
+/*			IMAGES			*/
+/****************************/
+#download{
+	float:right;
+	margin-right:1em;
+	margin-left:.5em;
+}
+
+#qrcode{
+	float:left;
+	margin: 0.7em 1em 1.5em 0;
+}
+
+
+
+/****************************/
+/*			TYPE			*/
+/****************************/
+/*--- HEADINGS ---*/
+#card h1,h2,h3,h4,h5,h6{
+	margin-bottom:24px;
+	line-height:30px;
+	color:#06334C;
+}
+
+#card h1,h2{
+	font-family:"Russo One", Rockwell, Cambria, Georgia, serif;
+	font-size:1.8em;
+	margin-bottom: .2em;
+	letter-spacing: 1px;
+}
+
+#card h2{
+	margin-bottom:24px;
+}
+
+#card h3{
+	font-size:24px;
+}
+
+/*--- PARAGRAPHS ---*/
+#card p{
+	margin-bottom:24px;
+	line-height:1.2em;
+}
+
+#tagline{
+	font-family: "Russo One", Rockwell, Cambria, Georgia, serif;
+	color:#FA6900;
+	letter-spacing: 1px;
+}
+
+
+
+/************************************************************************************************/
+/*    									MEDIA QUERIES		    								*/
+/************************************************************************************************/
+
 /******************************/
-/*      MEDIA QUERIES         */
+/*   GENERAL MEDIA QUERIES    */
 /******************************/
 @media only screen and (max-width: 980px){
 	footer li:nth-child(4) {
@@ -396,199 +708,11 @@ footer img:hover, footer a:hover {
 
 }
 
-/***********************************************************************************************************************/
-/*                                                         WORK                                                        */
-/***********************************************************************************************************************/
-.work article {
-	margin-bottom: 50px;
-}
 
-.work article:last-child {
-	margin-bottom: 0;
-}
+/******************************/
+/*   CONTACT MEDIA QUERIES    */
+/******************************/
 
-.work article h1 {
-	border: none; 
-	font-size: 1em; 
-}
-
-.work article h2 { 
-	font-size: .8em; 
-	font-weight: normal;
-	color: #FA6900;
-	padding-left: 20px;
-}
-
-.work article a {
-	color: #FA6900;
-}
-
-.work article .image {
-	text-align: center
-}
-
-.work article img {
-	width: 80%;
-	margin: 15px 0 15px 0;
-
-	-webkit-border-radius: 7px;
-	-moz-border-radius: 7px;
-	border-radius: 7px;
-
-	-moz-box-shadow: -7px 7px 10px 2px #888;
-	-webkit-box-shadow: -7px 7px 10px 2px #888;
-	box-shadow: -7px 7px 10px 2px #888;
-}
-
-
-/***********************************************************************************************************************/
-/*                                                       CURRICULUM                                                    */
-/***********************************************************************************************************************/
-
-#skills dl {margin-left: 15px;}
-#skills dl dt {clear: left; display: inline; float: left; margin: 10px 5px 10px 0; padding: 2px; text-align: right; width: 150px;}
-#skills dl dd {background: #dfdfdf; display: inline; float: left; font-size: 1em; margin: 10px 4px; padding: 4px; -webkit-border-radius: 5px; border-radius: 5px; -webkit-box-shadow:  0px 1px 1px 0px rgba(0, 0, 0, 0.35);  box-shadow:  0px 1px 1px 0px rgba(0, 0, 0, 0.35); cursor: default}
-#skills dl dd:hover {background-color: #ccc; -webkit-box-shadow: inset 0px 2px 1px 1px rgba(0, 0, 0, 0.15); box-shadow: inset 0px 2px 1px 1px rgba(0, 0, 0, 0.15); }
-
-#experience article, #studies article {margin: 15px 0 37px 130px; padding-left: 5px; position: relative; border: 1px solid #FCE7BA}
-#experience article:last-child, #studies article:last-child {margin-bottom: 0}
-#experience article:hover, #studies article:hover {border: 1px solid #FF9000; background: transparent}git 
-
-#experience article h1 span, #studies article h1 span {color: #777; font-size: 0.95em; font-weight: normal;}
-#experience article h2, #studies article h2 {background: transparent; display: inline; font-size: 1em; font-weight: normal; padding: 1.5em; color: #FA6900;}
-#experience article .start, #experience article .end, #studies article .start, #studies article .end  {background: transparent; border-top: 1px solid #FA6900; font-size: 1em; left: -130px; padding: 4px 0; position: absolute; text-align: center; top: 25px; width: 120px;}
-#experience article .end, #studies article .end {top: 0; border: none}
-#experience article p, #studies article p {font-size: 1.1em; line-height: 22px; margin: 10px 0 0; padding-left: 0;}
-#studies article .end {border-bottom: 1px solid #FA6900;}
-#languages article, #education article {padding-left:20px;}
-#experience article h1, #studies article h1, #languages article h1, #education article h1 {border: none; font-size: 1em; padding: 0; text-transform: none;}
-
-#cv-pdf img {
-	background: transparent;
-	float: right;
-	width: 15%;
-
-	opacity: 0.8;
-
-	-moz-transition: all .8s ease-in-out;
-	-webkit-transition: all .8s ease-in-out;
-	-o-transition: all .8s ease-in-out;
-	transition: all .8s ease-in-out;
-
-	-moz-box-shadow: -7px 7px 10px 2px #888;
-	-webkit-box-shadow: -7px 7px 10px 2px #888;
-	box-shadow: -7px 7px 10px 2px #888;
-}
-
-#cv-pdf img:hover {
-	opacity: 1;	
-
-	-moz-transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-	-o-transform: scale(1.1);
-	transform: scale(1.1);
-}
-
-/****************************/
-/* CURRICULUM MEDIA QUERIES */
-/****************************/
-@media screen and (max-width:768px) {
-  .contact li {font-size: 0.7em;}
-}
-
-@media screen and (max-width:680px) {
-  #skills dl dt {display: block; float: none; margin: 0; padding-top: 1.5em; text-align: left;}
-}
-
-@media screen and (max-width:500px) {
-  .contact li {border-right: medium none; display: block; float: none; font-size: 1em; overflow: hidden; padding: 6px 10px; text-align: left; width: auto;}
-}
-
-@media screen and (max-width:480px) {
-  #experience article {margin: 40px 0 37px;}
-  #experience article .start, #experience article .end {padding: 0px; left: 0; top: -25px; border: none; border-right: 1px solid #FA6900;}
-  #experience article .end {left: 125px; top: -25px; border: none}
-  
-  #studies article {margin: 40px 0 37px;}
-  #studies article .start, #experience article .end {padding: 0px; left: 0; top: -25px; border: none; border-right: 1px solid #FA6900;}
-  #experience article .end {left: 125px; top: -25px; border: none}
-}
-
-
-/***********************************************************************************************************************/
-/*                                                       CONTACT                                                       */
-/***********************************************************************************************************************/
-
-.vcard {
-	display:none;
-}
-
-/*------------------------------------*\
-	MAIN
-\*------------------------------------*/
-
-#card{
-	position:relative;
-	margin:4em auto;
-	padding:20px 20px 0 20px;
-	border:10px solid #f0f0f0;
-	background:#fff;
-	width:25em;
-
-	-moz-box-shadow:0 0 10px rgba(0,0,0,0.25);
-	-webkit-box-shadow:0 0 10px rgba(0,0,0,0.25);
-	-o-box-shadow:0 0 10px rgba(0,0,0,0.25);
-	box-shadow:0 0 10px rgba(0,0,0,0.25);
-}
-#card:before,
-#card:after{
-	content:" ";
-	display:block;
-	border:10px solid #f0f0f0;
-	background:#fff;
-	z-index:-1;
-	position:absolute;
-	top:-10px;
-	right:-10px;
-	bottom:-10px;
-	left:-10px;
-	
-	-moz-box-shadow:0 0 10px rgba(0,0,0,0.25);
-	-webkit-box-shadow:0 0 10px rgba(0,0,0,0.25);
-	-o-box-shadow:0 0 10px rgba(0,0,0,0.25);
-	box-shadow:0 0 10px rgba(0,0,0,0.25);
-	-moz-transform:rotate(1deg);
-	-webkit-transform:rotate(1deg);
-	-o-transform:rotate(1deg);
-	transform:rotate(1deg);
-}
-#card:after{
-	z-index:-2;
-	-moz-transform:rotate(-1.5deg);
-	-webkit-transform:rotate(-1.5deg);
-	-o-transform:rotate(-1.5deg);
-	transform:rotate(-1.5deg);
-}
-
-
-/*------------------------------------*\
-	IMAGES
-\*------------------------------------*/
-#download{
-	float:right;
-	margin-right:1em;
-	margin-left:.5em;
-}
-
-#qrcode{
-	float:left;
-	margin: 0.7em 1em 1.5em 0;
-}
-
-
-/*------------------------------------*\
-	MOBILE
-\*------------------------------------*/
 @media (max-width: 480px){
 
 	.contact div{
@@ -609,59 +733,90 @@ footer img:hover, footer a:hover {
 	}
 }
 
-
-/*******************************/
-/*    CONTACT MEDIA QUERIES    */
-/*******************************/
-
 @media (max-width: 480px) and (orientation: portrait){
 
 	#cardContact{
 		position:absolute;
 		left:-9999px;
 	}
-
 }
+
 @media (max-width: 480px) and (orientation: landscape){
 
 	#cardAbout{
 		position:absolute;
 		left:-9999px;
 	}
-
 }
 
-/*------------------------------------*\
-	TYPE
-\*------------------------------------*/
-/*--- HEADINGS ---*/
-#card h1,h2,h3,h4,h5,h6{
-	margin-bottom:24px;
-	line-height:30px;
-	color:#06334C;
-}
-#card h1,h2{
-	font-family:"Russo One", Rockwell, Cambria, Georgia, serif;
-	font-size:1.8em;
-	margin-bottom: .2em;
-	letter-spacing: 1px;
-}
-#card h2{
-	margin-bottom:24px;
-}
-#card h3{
-	font-size:24px;
+/****************************/
+/* CURRICULUM MEDIA QUERIES */
+/****************************/
+@media screen and (max-width:768px) {
+	.contact li {
+		font-size: 0.7em;
+	}
 }
 
-/*--- PARAGRAPHS ---*/
-#card p{
-	margin-bottom:24px;
-	line-height:1.2em;
-}
-#tagline{
-	font-family: "Russo One", Rockwell, Cambria, Georgia, serif;
-	color:#FA6900;
-	letter-spacing: 1px;
+@media screen and (max-width:680px) {
+	#skills dl dt {
+		display: block; 
+		float: none; 
+		margin: 0; 
+		padding-top: 1.5em; 
+		text-align: left;
+	}
 }
 
+@media screen and (max-width:500px) {
+	.contact li {
+		border-right: medium none; 
+		display: block; 
+		float: none; 
+		font-size: 1em; 
+		overflow: hidden; 
+		padding: 6px 10px; 
+		text-align: left; 
+		width: auto;
+	}
+}
 
+@media screen and (max-width:480px) {
+	#experience article {
+		margin: 40px 0 37px;
+	}
+
+	#experience article .start, 
+	#experience article .end {
+		padding: 0px; 
+		left: 0; 
+		top: -25px; 
+		border: none; 
+		border-right: 1px solid #FA6900;
+	}
+
+	#experience article .end {
+		left: 125px; 
+		top: -25px; 
+		border: none
+	}
+  
+	#studies article {
+		margin: 40px 0 37px;
+	}
+
+	#studies article .start, 
+	#experience article .end {
+		padding: 0px; 
+		left: 0; 
+		top: -25px; 
+		border: none; 
+		border-right: 1px solid #FA6900;
+	}
+
+	#experience article .end {
+		left: 125px; 
+		top: -25px; 
+		border: none
+	}
+}
