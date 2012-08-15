@@ -28,7 +28,8 @@ compile '*' do
   if item.binary?
     # don’t filter binary items
   else
-    filter :erb
+    filter :haml
+    #filter :erb
     layout 'default'
 	filter :relativize_paths, :type => :html
   end
