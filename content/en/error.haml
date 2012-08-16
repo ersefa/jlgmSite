@@ -6,15 +6,27 @@ ci: "/error/"
 .error
  %section 
   %h1 PAGE NOT FOUND
-  %p Sorry, the page you were looking for could not be found.<br /> You may have followed an outdated link to the site.<br /> Please <a href="/en/contact/index.html">let me know </a>if I can do something about it.</p>
+  %p Sorry, the page you were looking for could not be found.
+  %p You may have followed an outdated link to the site.
+  %p 
+   Please 
+   = link_to('let me', '/en/contact/') 
+   know if I can do something about it.
  
  %section 	
   %p In the meantime:
   %ul
-   %li Go to the <a href="/en/index.html">homepage</a>.
-   %li Take a look to my <a href="/en/index.html">resume</a>.
-   %li <a href="/en/contact/index.html">Contact</a> me
-
+   %li 
+    Go to the
+    = link_to('homepage', '/en/') 
+   %li 
+    Take a look to my
+    = link_to('resume', '/en/curriculum/') 
+   %li
+    = link_to('Contact', '/en/contact/') 
+    me.
 	
  %section 
-  %p All content by José Luis García Martínez unless otherwise noted.<br /> <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="Creative Commons Attribution-Noncommercial-Share Alike 3.0 License"> Some rights reserved.</a>
+  %p All content by José Luis García Martínez unless otherwise noted.
+  %p 
+   %a{:href => "http://creativecommons.org/licenses/by-nc-sa/3.0/", :title => "Creative Commons Attribution-Noncommercial-Share Alike 3.0 License"} Some rights reserved.

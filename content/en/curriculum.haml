@@ -5,7 +5,8 @@ ci: "/curriculum/"
 
 .curriculum
  #cv-pdf  
-  <a href="/misc/joseLuisCVen.pdf"><img src="/images/pdf.png" alt="English Curriculum"/></a>
+  %a{:href => "/misc/joseLuisCVen.pdf"}
+   %img{:src => "/images/pdf.png", :alt => "English Curriculum"}
  
  %section#summary 
   %h1 Summary
@@ -158,7 +159,8 @@ ci: "/curriculum/"
  %section#hobbies
   %h1 Hobbies
   %ul 
-   %li <a href="https://picasaweb.google.com/106802193440339874271" rel="external" title="My Picasa Set">Photography</a>
+   %li 
+    %a{:href => "https://picasaweb.google.com/106802193440339874271", :target => "_blank", :title => "My Picasa Set"}Photography
    %li Travel
    %li Gaming
    %li Hanging out with friends

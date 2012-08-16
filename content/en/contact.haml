@@ -11,23 +11,34 @@ ci: "/contact/"
     %span.fn Jose Luis
     %span.family-name Garcia Martinez
    %dt Email:
-   %dd <a href="mailto:jose@jlgm.org" class="email" rel="me">jose@jlgm.org</a>
+   %dd 
+    %a.email{:href => "mailto:jose@jlgm.org", :rel => "me"} jose@jlgm.org
    %dt URL:
-   %dd <a href="http://www.jlgm.org/" class="url" rel="me">http://www.jlgm.org/</a>
+   %dd 
+    %a.url{:href => "http://www.jlgm.org/", :rel => "me"} http://www.jlgm.org/
    %dt Twitter:
-   %dd <a href="http://twitter.com/ersefa" class="url" rel="me">http://twitter.com/ersefa</a>
+   %dd 
+    %a.url{:href => "http://twitter.com/ersefa", :rel => "me"} http://twitter.com/ersefa
    %dt GitHub:
-   %dd <a href="http://github.com/ersefa" class="url" rel="me">http://github.com/ersefa</a>
+   %dd 
+    %a.url{:href => "http://github.com/ersefa", :rel => "me"} http://github.com/ersefa</a>
 
  #card
   #cardAbout
-   <a type="text/directory" href="http://h2vx.com/vcf/www.ersefa.dreamhosters.com/contact/index.html"><img src="/images/vcard.png" alt="Donwload vCard" id="download" /></a>
+   %a{:type => "text/directory", :href => "http://h2vx.com/vcf/www.ersefa.dreamhosters.com/contact/index.html"}
+    %img#download{:src => "/images/vcard.png", :alt => "Donwload vCard"}
    %h1 José Luis García Martínez
    %p#tagline Software and web developer
    %p Hi,   You can add me as a contact by clicking in the above image. Also you can use your phone camera and capture the QR code, my vcard will be added to your phone contact list.
   
   #cardContact
    %h2 Get in touch
-   <img src="/images/qrcode.png" alt="vCard QRCode" id="qrcode"/>
-   %p If you want to get in touch about projects, advice, collaboration propositions or anything at all, email <a href="mailto:jose@jlgm.org">jose@jlgm.org</a>.
-   %p You can stalk me on <a href="http://github.com/ersefa">GitHub</a>.<br/>Also on <a href="http://twitter.com/ersefa">Twitter</a>.
+   %img#qrcode{:src => "/images/qrcode.png", :alt => "vCard QRCode"}
+   %p 
+    If you want to get in touch about projects, advice, collaboration propositions or anything at all, email 
+    %a{:href => "mailto:jose@jlgm.org"} jose@jlgm.org.
+   %p 
+    You can stalk me on 
+    %a{:href => "http://github.com/ersefa"} GitHub.
+    Also on 
+    %a{:href => "http://twitter.com/ersefa"} Twitter.

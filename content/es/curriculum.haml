@@ -5,7 +5,8 @@ ci: "/curriculum/"
 
 .curriculum
  #cv-pdf  
-  <a href="/misc/joseLuisCVes.pdf"><img src="/images/pdf.png" alt="Spanish Curriculum"/></a>
+  %a{:href => "/misc/joseLuisCVes.pdf"}
+   %img{:src => "/images/pdf.png", :alt => "Curriculum en Español"}
  %section#summary 
   %h1 Resumen
   %p Desarrollador web junior tanto en Front-end como Back-end.
@@ -155,7 +156,8 @@ ci: "/curriculum/"
  %section#hobbies
   %h1 Hobbies
   %ul 
-   %li <a href="https://picasaweb.google.com/106802193440339874271" rel="external" title="My Picasa Set">Fotografía</a>
+   %li
+    %a{:href => "https://picasaweb.google.com/106802193440339874271", :target => "_blank", :title => "My Picasa Set"}Fotografía
    %li Viajar
    %li Videojuegos
    %li Tomar unas cervezas con los amigos
