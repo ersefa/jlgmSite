@@ -1,0 +1,16 @@
+- if language_code_of(@item) == 'en' 
+ %ul
+  %li.about= link_to_unless_current('About', '/en/about/') 
+  %li.contact= link_to_unless_current('Contact', '/en/contact/') 
+  %li.work= link_to_unless_current('My work', '/en/work/') 
+  %li.curriculum= link_to_unless_current('Resume', '/en/curriculum/') 
+  %li.home= link_to_unless_current('Home', '/en/') 
+- elsif language_code_of(@item) == 'es' 
+ %ul
+  %li.acerca= link_to_unless_current('Acerca De', '/es/acerca/') 
+  %li.contacto= link_to_unless_current('Contacto', '/es/contacto/') 
+  %li.proyectos= link_to_unless_current('Proyectos', '/es/proyectos/') 
+  %li.curriculum= link_to_unless_current('Curriculum', '/es/curriculum/') 
+  %li.inicio= link_to_unless_current('Inicio', '/es/') 
+- else 
+ / WARNING: untranslated

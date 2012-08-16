@@ -1,0 +1,15 @@
+#title	
+ %h1 
+  José Luis
+  %span#first García
+  %span#second Martínez
+
+#language
+ %ul
+  -translations_of(@item).each do |t|
+   -if @item == t
+    %li
+     %span.current= language_name_of(t)
+   -else
+    %li
+     %a{:href => t.path}= language_name_of(t)
