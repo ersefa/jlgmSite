@@ -1,0 +1,14 @@
+---
+title: "blog"
+ci: "/blog/"
+---
+
+.blog
+ = sorted_articles.each do |post|
+  .post
+   %h1 = link_to post[:title], post.path 
+   %aside
+    Posted at:
+    = post[:created_at]
+   %article
+    = post.compiled_content 

@@ -10,6 +10,6 @@
    -if @item == t
     %li
      %span.current= language_name_of(t)
-   -else
+   -elsif @item[:ci] != "/blog/"
     %li
      %a{:href => t.path}= language_name_of(t)

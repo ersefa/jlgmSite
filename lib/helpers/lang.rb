@@ -14,6 +14,7 @@ module LangHelper
 			'/'         	    => '/en/',
 			'/curriculum/'      => '/en/curriculum/',
 			'/work/'			=> '/en/work/',
+			'/blog/'			=> '/es/blog/',
 			'/about/'			=> '/en/about/',
 			'/contact/'			=> '/en/contact/',
 			'/error/'			=> '/en/error/'	
@@ -22,6 +23,7 @@ module LangHelper
 			'/'                 => '/es/',
 			'/curriculum/'      => '/es/curriculum/',
 			'/work/'			=> '/es/proyectos/',
+			'/blog/'			=> '/es/blog/',
 			'/about/'           => '/es/acerca/',
 			'/contact/'        	=> '/es/contacto/',
 			'/error/'			=> '/es/error/'	

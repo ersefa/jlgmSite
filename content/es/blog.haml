@@ -1,0 +1,18 @@
+---
+title: "blog"
+ci: "/blog/"
+---
+
+.blog
+ %section
+  - sorted_articles.each do |post|
+   %article
+    %header
+     %h1= link_to post[:title], post.path 
+    %aside
+     Posted at:
+     = get_pretty_date(post)
+    %section
+     = post.compiled_content 
+   - if post != sorted_articles.last
+    %footer
