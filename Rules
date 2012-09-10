@@ -21,7 +21,7 @@ compile '/js/*' do
 end
 
 compile '/css/*' do
-  # don’t filter or layout
+  # filter :sass
 end
 
 compile '*' do
