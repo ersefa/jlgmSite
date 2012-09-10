@@ -14,5 +14,5 @@ ci: "/blog/"
      = get_pretty_date(post)
     %section
      = post.compiled_content 
-   - if post != sorted_articles.last
-    %footer
+    - if post != sorted_articles.last
+     %footer
