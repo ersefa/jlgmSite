@@ -10,7 +10,9 @@ Con este post estreno mi blog!!
 
 Bienvenido!
 
-Esta va a ser mi primera experiencia como blogero, blogger, o como leches se llame. Pretendo ser el Frank de la jungla del desarrollo web, directo, didáctico a la par que ameno con todo aquello que os quiero ir mostrando. Si peco de novato en estas lides, mis disculpas por adelantado, intentaré dar lo mejor de mi.
+Esta va a ser mi primera experiencia como bloguero, blogger, o como leches se llame. Pretendo ser el Frank de la jungla del desarrollo web, directo, didáctico a la par que ameno con todo aquello que os quiero ir mostrando. Si peco de novato en estas lides, mis disculpas por adelantado, intentaré dar lo mejor de mi.
+
+![Alt text](/images/frank.jpg)
 
 Este blog tiene dos razones de ser:
 

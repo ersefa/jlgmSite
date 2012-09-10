@@ -491,6 +491,25 @@ footer img:hover, footer a:hover {
     transform: scale(1.1);
 }
 
+/***********************************************************************************************************************/
+/*                                                       BLOG                                                       */
+/***********************************************************************************************************************/
+
+.blog article img {
+    display: block;
+    margin: 0 auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+    width: 70%;
+
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+
+    -moz-box-shadow: -7px 7px 10px 2px #888;
+    -webkit-box-shadow: -7px 7px 10px 2px #888;
+    box-shadow: -7px 7px 10px 2px #888;
+}
 
 /***********************************************************************************************************************/
 /*                                                       CONTACT                                                       */
