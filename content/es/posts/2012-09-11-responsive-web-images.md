@@ -4,10 +4,6 @@ created_at: 2012-09-11 02:17:53 +0200
 kind: article
 published: false
 ---
-
-I amar prestar aen (El Mundo ha cambiado) Han mathon ne nen (Lo siento en el agua) Han mathon ne chae (Lo siento en la tierra) A han noston ned gwilith (Lo huelo en el aire).
-
-
 Ejemplo:
 
 Requisitos previos:
@@ -17,6 +13,10 @@ Conocimientos básicos de JavaScript.
 
 Recursos:
 
+I amar prestar aen (El Mundo ha cambiado) 
+Han mathon ne nen (Lo siento en el agua) 
+Han mathon ne chae (Lo siento en la tierra) 
+A han noston ned gwilith (Lo huelo en el aire).
 
 En el caso del desarrollo web, ese anillo que lo cambia todo no son mas que toda esa plaga de dispositivos móviles que tenemos a nuestro alcance. Cada dia un mayor porcentaje de personas acceden a la web a través de dispositivos móviles en lugar de desde su pc como hacían antaño. Es necesario por tanto dirigir nuestros esfuerzos a satisfacer esa demanda.
 
