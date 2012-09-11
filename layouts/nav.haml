@@ -3,7 +3,8 @@
   %li.about= link_to_unless_current('About', '/en/about/') 
   %li.contact= link_to_unless_current('Contact', '/en/contact/') 
   -# %li.blog= link_to_unless_current('Blog', '/en/blog/')
-  %li.work= link_to_unless_current('My work', '/en/work/') 
+  %li.work= link_to_unless_current('My work', '/en/work/')
+  %li.work= link_to_unless_current('Portfolio', '/en/portfolio/')  
   %li.curriculum= link_to_unless_current('Resume', '/en/curriculum/') 
   %li.home= link_to_unless_current('Home', '/en/') 
 - elsif language_code_of(@item) == 'es' 
@@ -11,7 +12,8 @@
   %li.acerca= link_to_unless_current('Acerca De', '/es/acerca/') 
   %li.contacto= link_to_unless_current('Contacto', '/es/contacto/')
   %li.blog= link_to_unless_current('Blog', '/es/blog/') 
-  %li.proyectos= link_to_unless_current('Proyectos', '/es/proyectos/') 
+  %li.proyectos= link_to_unless_current('Proyectos', '/es/proyectos/')
+  %li.proyectos= link_to_unless_current('Portfolio', '/es/portfolio/')  
   %li.curriculum= link_to_unless_current('Curriculum', '/es/curriculum/') 
   %li.inicio= link_to_unless_current('Inicio', '/es/') 
 - else 

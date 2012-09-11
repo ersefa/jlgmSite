@@ -6,3 +6,4 @@ include Nanoc3::Helpers::Tagging
 include LangHelper
 include PostHelper
 include RandomTextHelper
+include PortfolioHelper

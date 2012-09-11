@@ -3,6 +3,7 @@ title: "Crear un blog con nanoc"
 created_at: 2012-09-10 21:00
 kind: article
 ci: "/2012-09-10-nanocBlog/"
+published: false
 ---
 
 Este post va a tratar de como crear un blog estático con nanoc.
