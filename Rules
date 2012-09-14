@@ -23,7 +23,7 @@ compile '/*/posts/*' do
 end
 
 compile '/*/portfolios/*' do
-  filter :kramdown
+  filter :haml
   filter :relativize_paths, :type => :html
   layout 'portfolio'
 end

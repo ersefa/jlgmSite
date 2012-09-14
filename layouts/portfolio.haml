@@ -1,2 +1,8 @@
 = render 'default' do
- %section= yield
+ .portfolio
+  %section
+   %article
+    %header
+     %h1= item[:title] 
+    %section
+     = yield

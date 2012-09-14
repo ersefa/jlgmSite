@@ -250,7 +250,7 @@ section a:visited,
 #card a:link,
 #card a:visited {
     text-decoration:none;
-    color: #003E5F;
+    color: #06334C;
 }
 
 /*************************/
@@ -296,37 +296,37 @@ footer img:hover, footer a:hover {
 
 
 /***********************************************************************************************************************/
-/*                                                         WORK                                                        */
+/*                                                         portfolio                                                        */
 /***********************************************************************************************************************/
-.work article {
+.portfolio article {
     margin-bottom: 50px;
 }
 
-.work article:last-child {
+.portfolio article:last-child {
     margin-bottom: 0;
 }
 
-.work article h1 {
+.portfolio article h1 {
     border: none; 
     font-size: 1em; 
 }
 
-.work article h2 { 
+.portfolio article h2 { 
     font-size: .8em; 
     font-weight: normal;
     color: #FA6900;
     padding-left: 20px;
 }
 
-.work article a {
+.portfolio article section a {
     color: #FA6900;
 }
 
-.work article .image {
+.portfolio article .image {
     text-align: center
 }
 
-.work article img {
+.portfolio article img {
     width: 80%;
     margin: 15px 0 15px 0;
 
@@ -337,6 +337,10 @@ footer img:hover, footer a:hover {
     -moz-box-shadow: -7px 7px 10px 2px #888;
     -webkit-box-shadow: -7px 7px 10px 2px #888;
     box-shadow: -7px 7px 10px 2px #888;
+}
+
+.portfolio section {
+    margin: 0;
 }
 
 

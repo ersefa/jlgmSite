@@ -8,12 +8,12 @@ ci: "/portfolio/"
   %h1 Proyectos
   %p En esta sección puedes ver alguno de los proyectos que he llevado a cabo.
   %p Algunas de estas páginas ya no se encuentran disponibles actualmente pero podrás navegar en ellas pues han sido archivadas. Sin embargo, no se garantiza el funcionamiento de todos los enlaces, especialmente los externos. Puede que algunos contenidos hayan sido eliminados o modificados así como estilos desactivados para cumplir con las licencias existentes.
-
- - sorted_portfoliosES.each do |portfolio| 
-  - if portfolio[:published]
-   %section
+ 
+ %section
+  - sorted_portfoliosES.each do |portfolio| 
+   - if portfolio[:published]
     %article
      %header
-      %h2= link_to portfolio[:title], portfolio.path 
+      %h1= link_to portfolio[:title], portfolio.path 
      %section
       = portfolio.compiled_content

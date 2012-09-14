@@ -1,9 +1,10 @@
 = render 'default' do
- %section
-  %header
-   %h1= item[:title] 
-  %aside
-   %h2 
-    Posted at: 
-    = get_pretty_date(item)
-  %section= yield
+ .blog
+  %section
+   %article
+    %header
+     %h1= item[:title] 
+    %aside
+     Publicado: 
+     = get_pretty_date(item)
+    %section= yield

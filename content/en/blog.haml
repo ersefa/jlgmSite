@@ -4,11 +4,18 @@ ci: "/blog/"
 ---
 
 .blog
- = sorted_articles.each do |post|
-  .post
-   %h1 = link_to post[:title], post.path 
-   %aside
-    Posted at:
-    = post[:created_at]
-   %article
-    = post.compiled_content 
+ %p There is no English version of the blog at the moment. But stay tuned!. 
+ %p In the meantime you can read the Spanish version.
+ %section
+  - sorted_articles.each do |post|
+   - if post[:published]
+    %article
+     %header
+      %h1= link_to post[:title], post.path 
+     %aside
+      Publicado:
+      = get_pretty_date(post)
+     %section
+      = post.compiled_content 
+     - if post != sorted_articles.last
+      %footer
