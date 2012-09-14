@@ -4,8 +4,9 @@ ci: "/blog/"
 ---
 
 .blog
- %p There is no English version of the blog at the moment. But stay tuned!. 
- %p In the meantime you can read the Spanish version.
+ #warning
+  %p There is no English version of the blog at the moment. But stay tuned!. 
+  %p In the meantime you can read the Spanish version.
  %section
   - sorted_articles.each do |post|
    - if post[:published]
