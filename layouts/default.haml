@@ -11,16 +11,30 @@
 		
   %title= "#{@item[:title]} - jlgm.org"
 
-  %link{:rel => "shortcut icon", :href => "/images/favicon.png", :type => "image/png"}
-  %link{:rel => "author", :href => "/humans.txt"}
-  %link{:rel => "stylesheet", :type => "text/css", :href => "/css/stylesheet.css", :media => "screen"}
+  %link{:href => "/images/favicon.png", :rel => "shortcut icon", :type => "image/png"}
+  %link{:href => "/humans.txt", :rel => "author"}
+  %link{:href => "/css/stylesheet.css", :rel => "stylesheet", :type => "text/css", :media => "screen"}
+  %link{:href => "/css/prettify.css", :rel => "stylesheet", :type => "text/css"}
   %link{:href => 'http://fonts.googleapis.com/css?family=Russo+One', :rel => 'stylesheet', :type => 'text/css'}
+
+ 
   
 %body
  %header= render 'header'
  %nav= render 'nav'
  #content= yield
  %footer= render 'footer'
+
+ / jQuery
+ %script{:src =>"//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"}
+
+ / Google Prettify
+ %script{:type => "text/javascript", :src =>"/js/prettify.js"}
+ %script{:type => "text/javascript"}
+  $(function() { 
+  $('code').addClass('prettyprint').addClass('linenums'); 
+  prettyPrint();
+  });
 
  / Google Analytics
  %script{:type => "text/javascript"}
@@ -32,3 +46,4 @@
   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
+

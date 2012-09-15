@@ -5,7 +5,7 @@ task :new_post, :title do |t, args|
   args.with_defaults(:title => 'New Post')
   title = args.title
 
-  filename = "#{Time.now.strftime('%Y-%m-%d')}-#{titleES.to_url}.md"
+  filename = "#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.md"
   filenamePath = "./content/es/posts/#{filename}"
 
   if File.exist?(filenamePath)
@@ -18,7 +18,7 @@ task :new_post, :title do |t, args|
     post.puts "title: \"#{title}\""
     post.puts "created_at: #{Time.now}"
     post.puts "kind: article"
-	post.puts "ci: \"/#{filename}/\"" 
+    post.puts "ci: \"/#{filename}/\"" 
     post.puts "published: false" 
     post.puts "---\n\n"
   end
@@ -54,7 +54,7 @@ task :new_proyect, :titleES, :titleEN do |t, args|
     proyect.puts "title: \"#{titleES}\""
     proyect.puts "created_at: #{Time.now}"
     proyect.puts "kind: portfolioES"
-	proyect.puts "ci: \"/#{filenameES}/\"" 
+    proyect.puts "ci: \"/#{filenameEN}/\"" 
     proyect.puts "published: false" 
     proyect.puts "---\n\n"
   end
@@ -65,7 +65,7 @@ task :new_proyect, :titleES, :titleEN do |t, args|
     proyect.puts "title: \"#{titleEN}\""
     proyect.puts "created_at: #{Time.now}"
     proyect.puts "kind: portfolioEN"
-	proyect.puts "ci: \"/#{filenameEN}/\"" 
+    proyect.puts "ci: \"/#{filenameEN}/\"" 
     proyect.puts "published: false" 
     proyect.puts "---\n\n"
   end

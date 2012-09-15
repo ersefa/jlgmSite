@@ -6,7 +6,7 @@ ci: "/2012-02-10-helloWorld/"
 published: true
 ---
 
-##Bienvenido!
+#Bienvenido!
 
 Con este post estreno mi blog!!
 
@@ -14,6 +14,7 @@ Esta va a ser mi primera experiencia como bloguero, blogger, o como leches se ll
 
 ![Frank de la jungla](/images/frank.jpg)
 
+#Razón de ser:
 Este blog tiene dos razones de ser:
 
 * La principal es compartir lo que aprendo con todos aquellos que estén interesados. Para ello intentaré crear pequeños tutoriales fáciles de seguir, plagados de recursos, donde al menos tener una primera toma de contacto con la tecnología en cuestión. No pretenden ser una masterclass, mas bien un 101 para tener un punto de partida.
