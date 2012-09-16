@@ -16,7 +16,7 @@ compile '/' do
   layout 'default'
 end
 
-compile '/es/feed/*' do
+compile '/feed/*' do
   filter :erb
 end
 
@@ -66,8 +66,8 @@ route '/examples/*' do
    item.identifier.chop + '.' + item[:extension]
 end
 
-route '/es/feed/*' do
-  '/blog.xml'
+route '/feed/*' do
+  item.identifier.chop + '.' + item[:extension]
 end
 	
 route '/*/posts/*' do

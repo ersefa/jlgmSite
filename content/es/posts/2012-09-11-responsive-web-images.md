@@ -2,6 +2,7 @@
 title: "Responsive web images - HiSRC"
 created_at: 2012-09-11 02:17:53 +0200
 kind: article
+ci: "/2012-09-1-responsive-web-images.md/"
 published: true
 ---
 
