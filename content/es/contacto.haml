@@ -26,14 +26,14 @@ ci: "/contact/"
  #card
   #cardAbout
    %a{:type => "text/directory", :href => "http://h2vx.com/vcf/www.ersefa.dreamhosters.com/contact/index.html"}
-    %img#download{:src => "/images/vcard.png", :alt => "Donwload vCard"}
+    %img#download{:src => "/images/layout/vcard.png", :alt => "Donwload vCard"}
    %h1 José Luis García Martínez
    %p#tagline Software and web developer
    %p Hola!, he añadido mi vcard por si te apetece añadirme como contacto, puedes descargarla haciendo click en la imagen. También puedes usar la cámara de tu móvil y capturar el código QR, mi vcard será añadida a tus contactos.
   
   #cardContact
    %h2 Ponte en contacto
-   %img#qrcode{:src => "/images/qrcode.png", :alt => "vCard QRCode"}
+   %img#qrcode{:src => "/images/layout/qrcode.png", :alt => "vCard QRCode"}
    %p 
     Si quieres contactarme para algún proyecto, colaboración, consejo o para cualquier otra cosa, enviame un correo a 
     %a{:href => "mailto:jose@jlgm.org"} jose@jlgm.org.
@@ -42,5 +42,3 @@ ci: "/contact/"
     %a{:href => "http://github.com/ersefa"} GitHub.
     Y personalmente en 
     %a{:href => "http://twitter.com/ersefa"} Twitter.
-
- <pre><code class="language-ruby"><span class="k">module</span> <span class="nn">PortfolioHelper</span>&#x000A;&#x000A;  <span class="k">def</span> <span class="nf">portfolios</span>&#x000A;    <span class="vi">@items</span><span class="o">.</span><span class="n">select</span> <span class="p">{</span> <span class="o">|</span><span class="n">item</span><span class="o">|</span> <span class="n">item</span><span class="o">[</span><span class="ss">:kind</span><span class="o">]</span> <span class="o">==</span> <span class="s1">'portfolio'</span> <span class="p">}</span>&#x000A;  <span class="k">end</span>&#x000A;&#x000A;  <span class="k">def</span> <span class="nf">sorted_portfolios</span>&#x000A;    <span class="n">portfolios</span><span class="o">.</span><span class="n">sort_by</span> <span class="p">{</span> <span class="o">|</span><span class="nb">p</span><span class="o">|</span> <span class="n">attribute_to_time</span><span class="p">(</span><span class="nb">p</span><span class="o">[</span><span class="ss">:created_at</span><span class="o">]</span><span class="p">)</span> <span class="p">}</span><span class="o">.</span><span class="n">reverse</span>&#x000A;  <span class="k">end</span>&#x000A;&#x000A;  <span class="k">def</span> <span class="nf">portfolio_image_url</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="n">type</span><span class="p">)</span>&#x000A;    <span class="s1">'/images/portfolio/'</span> <span class="o">+</span> <span class="n">item</span><span class="o">[</span><span class="ss">:image_id</span><span class="o">]</span> <span class="o">+</span> <span class="s1">'_'</span> <span class="o">+</span> <span class="n">type</span> <span class="o">+</span> <span class="s1">'.jpg'</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;&#x000A;<span class="kp">include</span> <span class="no">PortfolioHelper</span></code></pre>

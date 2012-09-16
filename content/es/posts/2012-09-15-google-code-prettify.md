@@ -14,36 +14,47 @@ Si para vuestro blog utilizáis alguna herramienta de terceros, gestor de conten
 En mi caso y tras una breve búsqueda me he decidido por utilizar "Google Code Prettify". 
 Si conocéis otras herramientas o métodos vuestras aportaciones serán mas que bienvenidas.
 
-#Requisitos:
+#Requisitos
 * Dificultad: Sencilla
 * Conocimientos: 
-	* JS: Iniciado
-	* HTML, CSS: Iniciado
-	* Haml, Markdown: Iniciado
+	* JS: Básico
+	* HTML, CSS: Básico
+	* Haml, Markdown: Básico
 
 Vamos a ensuciarnos las manos con un poco de código:
 
-#Manos a la obra:
+#Ejemplo
+
+	void Quicksort(int* v, int b, int t){
+    	int pivote;
+     	if(b < t){
+        		pivote=colocar(v, b, t);
+        		Quicksort(v, b, pivote-1);
+        		Quicksort(v, pivote+1, t);
+     	}  
+	}
+
+#Manos a la obra
 
 Para empezar accedemos al [repositorio](http://code.google.com/p/google-code-prettify/).
 En él podremos encontrar los links de descarga, documentación, FAQ, los siempre útiles google groups, etc.
 
 [Descargamos](http://code.google.com/p/google-code-prettify/downloads/detail?name=prettify-1-Jun-2011.tar.bz2&can=2&q=) su versión no minimizada que incluye documentación y tests (recordad que en producción siempre debemos utilizar las versiones minimizadas).
 
-Una vez descomprimido podremos acceder a su README.html donde tenemos las intrucciones de instalación.
+Una vez descomprimido podremos acceder a su README.html donde tenemos las instrucciones de instalación.
 
 El primer paso es añadir la hoja de estilos y el JavaScript necesarios:
 
 
 	<link href="prettify.css" type="text/css" rel="stylesheet"/>
-	<script type="text/javascript" src="prettify.js"></script>
+	<script src="prettify.js" type="text/javascript"></script>
 
 En nuestro caso lo debemos añadir a nuestro layout general (default.haml), para que dispongan de él todas nuestras páginas.
-Como se trata de haml, debemos transformar la sintaxis. Quederían de la siguiente forma:
+Como se trata de haml, debemos transformar la sintaxis. Quedarían de la siguiente forma:
 
 
 	%link{:href => "/css/prettify.css", :rel => "stylesheet", :type => "text/css"}
-	%script{:type => "text/javascript", :src =>"/js/prettify.js"}
+	%script{:src =>"/js/prettify.js", :type => "text/javascript"}
 
 Obviamente deberemos copiar los archivos en nuestro servidor e indicar la localización correcta.
 
@@ -60,7 +71,7 @@ Para ello crearemos este pequeño script que utiliza jQuery:
 
 Con estas 4 lineas de código estamos indicando que a cada tag "code" generado por nuestro filtro Markdown le añadamos la clase "prettyprint" que es la que se utilizará para el coloreado y formateo de código.
 
-Ya sólo nos queda introducir el código que nos apetezca, para ello recordar brevemente que para Markdown basta con identar nuestro código. La primera línea tendrá una identación de 4 espacios o un TAB. Las subsiguientes lineas seguirán siendo identadas según necesitemos.
+Ya sólo nos queda introducir el código que nos apetezca, para ello recordar brevemente que para Markdown basta con identar nuestro código. La primera línea tendrá una identación de 4 espacios o un TAB. Las siguientes lineas seguirán siendo identadas según necesitemos.
 
 Para mas información visitad la [página de sintaxis para Markdown](http://daringfireball.net/projects/markdown/syntax#code)
 
