@@ -14,17 +14,9 @@ He de confesar que me considero un defensor del ["Responsive/Adaptative web Desi
 
 La gracia de esta técnica es que no se hacen desarrollos paralelos o específicos para cada uno de los dispositibos existentes sino que creamos un sólo diseño adaptativo que mute y varie según la necesidad de disho dispositivo (diferentes tamaños, orientaciones y resoluciones de pantalla). Para ello se utilizan las llamadas "media queries", una poderosa herramienta introducida en la version 3 de CSS.
 
+![responsive images](/images/blog/responsive.png)
+
 El motivo de este post no es para ensalzar sus virtudes sino precisamente para hablar de las técnicas existentes para atajar uno de sus mayores problemas: las imágenes.
-
-Las imágenes en un diseño web adaptativo se cargan una sola vez y posteriormente se juega con porcentajes o anchos relativos para escalarlas o reducirlas según nuestras necesidades, pero en esencia es siempre la misma imagen. El problema reside en que tanto para un smartphone con una pantalla reducida, como para nuestra flamante pantalla fullHD del salón de casa se esta sirviendo la misma imagen. Para que la imagen sea mostrada con una calidad decente en nuestro televisor fullHD tiene que tener una calidad y tamaño adecuados, mientras que en nuestro móvil bastaría una mas pequeña y menos pesada. A esto se le une que en casa o la oficina casi siempre disponemos de conexiones de banda ancha mientras que en nuestros móviles cada KB cuenta.
-
-Debemos decidir, por tanto, antes de hacer un request de imagen cual es la mas adecuada para mi dispositivo, bien la versión grande y pesada para mi televisión fullHD o bien la versión reducida y ligera que se cargará rápida y nítidamente en mi smartphone. Actualmente no existe forma directa de conseguirlo, aunque se prevee la incorporación de [nuevas semánticas para las próximas revisiones de HTML5.](http://www.w3.org/community/respimg/) 
-
-Actualmente tenemos [diversas técnicas](http://css-tricks.com/which-responsive-images-solution-should-you-use/) para implementar esta funcionalidad. 
-
-Podemos ver un listado resumido con sus pros y sun contras en [esta tabla](https://docs.google.com/spreadsheet/ccc?key=0Al0lI17fOl9DdDgxTFVoRzFpV3VCdHk2NTBmdVI2OXc#gid=0)
-
-Este post tratará de como implementar esta funcionalidad con el método [HiSRC](https://github.com/teleject/hisrc), un plugin para jQuery.
 
 #Requisitos
 * Dificultad: Media
@@ -35,7 +27,18 @@ Este post tratará de como implementar esta funcionalidad con el método [HiSRC]
 #Ejemplo
 [HiSCR en estado puro](/examples/hisrc.html)
 
+<!-- Sigue leyendo -->
+
 #Manos a la obra
+Las imágenes en un diseño web adaptativo se cargan una sola vez y posteriormente se juega con porcentajes o anchos relativos para escalarlas o reducirlas según nuestras necesidades, pero en esencia es siempre la misma imagen. El problema reside en que tanto para un smartphone con una pantalla reducida, como para nuestra flamante pantalla fullHD del salón de casa se esta sirviendo la misma imagen. Para que la imagen sea mostrada con una calidad decente en nuestro televisor fullHD tiene que tener una calidad y tamaño adecuados, mientras que en nuestro móvil bastaría una mas pequeña y menos pesada. A esto se le une que en casa o la oficina casi siempre disponemos de conexiones de banda ancha mientras que en nuestros móviles cada KB cuenta.
+
+Debemos decidir, por tanto, antes de hacer un request de imagen cual es la mas adecuada para mi dispositivo, bien la versión grande y pesada para mi televisión fullHD o bien la versión reducida y ligera que se cargará rápida y nítidamente en mi smartphone. Actualmente no existe forma directa de conseguirlo, aunque se prevee la incorporación de [nuevas semánticas para las próximas revisiones de HTML5.](http://www.w3.org/community/respimg/) 
+
+Actualmente tenemos [diversas técnicas](http://css-tricks.com/which-responsive-images-solution-should-you-use/) para implementar esta funcionalidad. 
+
+Podemos ver un listado resumido con sus pros y sun contras en [esta tabla](https://docs.google.com/spreadsheet/ccc?key=0Al0lI17fOl9DdDgxTFVoRzFpV3VCdHk2NTBmdVI2OXc#gid=0)
+
+Este post tratará de como implementar esta funcionalidad con el método [HiSRC](https://github.com/teleject/hisrc), un plugin para jQuery.
 
 ##Funcionamiento de HiSRC:
 * En un primer momento se carga una imagen de baja resolución que estará asociada al tag img de toda la vida.

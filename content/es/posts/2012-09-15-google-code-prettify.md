@@ -34,6 +34,8 @@ Vamos a ensuciarnos las manos con un poco de código:
      	}  
 	}
 
+<!-- Sigue leyendo -->
+
 #Manos a la obra
 
 Para empezar accedemos al [repositorio](http://code.google.com/p/google-code-prettify/).

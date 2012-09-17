@@ -80,7 +80,7 @@ html{
 }
 
 body {
-    background:#ffffff url('/images/bg.png') repeat;
+    background:#ffffff url('/images/layout/bg.png') repeat;
     max-width: 60em; /* 16x60 = 960px */
     margin: auto;
     padding: 0 0.5em 3em 0.5em;
@@ -537,11 +537,11 @@ footer img:hover, footer a:hover {
 
     -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
-    border-radius: 7px;
+    border-radius: 7px;/*
 
     -moz-box-shadow: -7px 7px 10px 2px #888;
     -webkit-box-shadow: -7px 7px 10px 2px #888;
-    box-shadow: -7px 7px 10px 2px #888;
+    box-shadow: -7px 7px 10px 2px #888;*/
 }
 
 .blog #warning {
