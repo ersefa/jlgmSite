@@ -21,6 +21,10 @@ task :new_post, :title do |t, args|
     post.puts "ci: \"/#{filename}/\"" 
     post.puts "published: false" 
     post.puts "---\n\n"
+    post.puts "#Introducción"
+    post.puts "#Requisitos"
+    post.puts "#Ejemplo"
+    post.puts "#Manos a la obra"
   end
 end 
 
